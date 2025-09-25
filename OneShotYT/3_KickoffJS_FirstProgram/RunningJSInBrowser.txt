@@ -1,0 +1,52 @@
+You can run it 2 ways in the browser.
+
+1. On the Browser Console.
+2. Through an HTML Page.
+
+The Browser console is a window where we can execute code.
+It is also used for showing error messages and debugging.
+
+Inspect Element and do that now.
+or do this as a dev -
+Ctrl SHift i
+
+1.
+To generate a popup, you can use the alert function for JS 
+
+//ALWAYS USE A SEMICOLON TO TERMINATE YOUR JS LINES OF CODE 
+
+alert("Welcome to SCALive");
+
+Or calculations 
+
+8+2-1
+
+2+3
+
+etc etc
+
+-------------------------------------------------------------------------------
+
+2.
+
+We can also do it in HTML like yk how we connect CSS to html also.
+Either we do it in a style tag or by linking in head in HTML.
+
+The same we either we insert JS into HTML using the script tag or just link as well.
+
+<script>
+    //js code
+</script>
+
+generally like this
+
+<html>
+<head>
+    <script>
+        //js code
+    </script>
+</head>
+<body>
+    <!-- html code -->
+</body>
+</html>

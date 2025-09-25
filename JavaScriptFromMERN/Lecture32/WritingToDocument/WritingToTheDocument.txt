@@ -1,0 +1,23 @@
+C -> printf()
+
+Java -> System.out.println()
+
+JS -> document.write() <- this is a method
+And the object it is associated with is 'document'.
+
+Objects are smart variables, along with data, they can have methods too.
+like example 
+var name  = "Hav";
+name = name.replace("Hav", "Havi");
+
+The whole document is an object in JS. Your browser page, thats the document.
+
+In Java, a class is needed for objects.
+
+In JS, an object is like an advanced variable. Then theres objects without classes too.
+
+objects have data, functions in JS.
+
+We use document.write() however this is not right, the right way is to make use of DOM.
+DOM is proper compared to this method.
+

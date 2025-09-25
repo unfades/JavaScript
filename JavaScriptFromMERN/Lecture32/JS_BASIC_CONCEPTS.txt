@@ -1,0 +1,87 @@
+Todays Agenda
+
+JavaScript Embedding
+
+Writing to the Document
+
+Using the Browser Console
+
+Comments in JavaScript
+
+-------------------------------------------------------------------------------------
+
+JavaScript Embedding
+
+JavaScript can be embedded in HTML pages in 2 ways.
+its just like
+Adding CSS In HTML:
+
+1. Internal CSS
+2. Inline CSS 
+3. External CSS <- best practice
+
+Adding JS in HTML:
+==================
+
+1.INternally add JS
+
+2. Externally add JS <- best practice
+
+
+For local JavaScript Embedding we gotta use the Script Tag.
+
+script tag either goes into the head, or into the body.
+
+Write into the head when -
+
+script code is not interacting with our html page.
+like operating on html, altering stuff...
+
+Write into the body when -
+
+when it is doing just that. Like whenever html is altered then put it into the LAST
+of the BODY tag part.
+-----------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Best JS Tutorial</title>
+    <!-- at the start this time -->
+    <script>
+        alert("Hello, how're you?");
+        //fails cause the heading hasnt loaded yet so text cant be changed to blue
+        //u can check it failed in the console window too 
+        //this is a DOM Concept we will learn later... and functions later too which we can use
+        //to make this irrelevant sometimes
+        document.getElementsByTagName("h1")[0].style.color = "blue";
+    </script>
+</head>
+<body>
+    <h1>Welcome to JS</h1>
+</body>
+</html>
+
+The JS code script tag is greedy unlike for CSS its gotta be placed in the head or end of body
+It runs when seen in the flow of code.
+
+In the head you can call that function and its in the head right so it will only run when
+the function is called in the program. This allows for script tags to be in the head and
+also be able to run later when required.
+
+ex:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function changeColor(){
+            //js code for changing color...
+        }
+    </script>
+</head>
+<body>
+    <p>Hello</p>
+</body>
+</html>
+

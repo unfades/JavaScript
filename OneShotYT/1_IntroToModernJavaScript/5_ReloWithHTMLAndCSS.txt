@@ -1,0 +1,10 @@
+You already know it.
+
+HTML is the barebones skeleton or the car frame.
+
+CSS is the skin, hair color, like the shape of the car, form.
+
+JavaScript is the Muscles and Logic, or the Engine of our car.
+
+JavaScript is for the functionality of our webpages.
+

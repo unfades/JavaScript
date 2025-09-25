@@ -1,0 +1,39 @@
+In 1996 Brendan Eich made JavaScript's first version in 10 days and called it Mocha. Mad.
+For NetScape -> now Mozilla.
+
+Later it was named LiveScript, then JavaScript.
+
+Many similar languages appeared. Microsoft published an exact 1:1 copy of JavaScript.
+
+Then in 1997 Netscape approached ECMA, European COmputer Manufacturers Association.
+To take it and standardize JS.
+Then it was called ES1 ECMAScript1 and it became the first version of JavaScript's Language Standard.
+Therefore:
+
+ECMAScript is the language Standard 
+JavaScript is the language in practice.
+
+In 2009 ES5 released with a lotta features.
+
+But then in 2015 the biggest JS Update was released.
+
+ES6 ECMAScript 2015 was the biggest update to JS EVER.
+ECMA then decided to change to an annual release cycle in order to ship less features per update.
+
+then in 2016,2017, 2018 ... 2023 were the years for release of 
+
+ES7,ES8,ES9, ... ES14 so in 2025 we'd be on ES16. Which is true.
+----------------------------------------------------------------------------------------------------
+POPULAR POPULAR POPULAR POPULAR
+
+From 2014 to now JS is the top language according to github, MAD.
+After this course we can go to react, angular, vue, etc.
+
+----------------------------------------------------------------------------------------------
+
+Tools for JS - 
+
+COde EDitor, VSCode for us.
+
+Web Browser, Chrome for us.
+

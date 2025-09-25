@@ -1,0 +1,50 @@
+We are gonna learn JavaScript, ReactJS, NodeJS, ExpressJS,
+MongoDB(NoSQL), Ajax, JQuery(Outdated Legacy Project)
+
+Check out the presentation slides now, they were explained... 
+
+JS Engine COmponents
+
+JS -> JS Engine -> Our Computer
+
+Inside the JS Engine there is a Parser checks for syntax mistakes.
+
+It turns it into a tree for the interpreter called an AST(Abstract Syntax Tree)...
+
+Inside the AST theres tokens
+
+Look at it on astexplorer.net for the example of this.
+
+Then the interpreter for JS
+
+Before in a language, code via interpreter would be checked in lines
+
+each line is converted to machine code and goes to the cpu.
+
+
+Thats how they worked before.
+
+The problem was that it is possible the same line is written twice.
+
+Then it would run that twice.
+
+If 100 times its the same code then it would run it 100 times.
+
+90s JS worked like this before.
+
+Now its smart. It turns it into intermediate code, ByteCode first via interpreter. Then later
+to machine code.
+
+The profiler watched the interpreter, and if the interpreter is doing something over n over
+
+then it passes trhatr tro the compiler, that makes it fast, and that is how its optimized code.
+Profiler is sitting there to optimize.
+
+V8 is the best engine right now in 2025.
+
+Its all made in C++ for V8, the same V8 is found in Node JS.
+
+Thats why its On the Fly compiled.
+
+Thats why its a JIT compiler. Just in time it runs when needed.
+

@@ -1,0 +1,6 @@
+Just use the <script> tag the same as we use the 
+link tag for CSS
+
+and just add an src attribute to it and name the file we are linking for functionality.
+In the head tag this happens same as CSS.
+

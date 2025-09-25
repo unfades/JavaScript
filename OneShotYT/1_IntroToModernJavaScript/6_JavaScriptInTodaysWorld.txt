@@ -1,0 +1,55 @@
+JavaScript in Today's World.
+
+Client Side.
+Earlier JavaScript was just client side and was only used for frontend
+functionality in the browser.
+
+Then starting from 2009 Node JS came along and it started to be used in
+the backend also.
+
+Then using Electron JS we can now develop desktop apps with JS too.
+
+And using frameworks like React Native and Ionic, we can develop 
+mobile apps for both android and IOS as well.
+
+Besides System level programming, you will find JavaScript everywhere.
+So its not used for hardware interaction much but it is everywhere tho.
+
+These days we are using JS everywhere like everywhere, game dev, Machine
+Learning, AI, etc etc.
+
+---------------------------------------------------------------------------------
+
+What can JavaScript Do in the browser?
+
+User Interaction, Form Validation. Image Swaps/Rollovers
+
+When a user takes action and something happens that is with JS.
+Interacton -
+ex: Country State DB Demo. Look it up on github. Link below.
+https://demo.countrystatecity.in/
+
+Form Validation - 
+ex: A Form to Fill and make the form respond while filling.
+
+Image Swaps/Rollovers
+Image Swapping, Image Zooming, etc.
+
+
+With AJAX, it can communicate with Databases access them..
+--------------------------------------------------------------------------------------
+WHAT JS CANNOT DO -
+
+CLient Side JS cannot talk to Databases.
+(With AJAX, it can communicate with Databases access them..)
+But we can using Ajax or FetchAPI.
+
+JavaScript cannot access files on client machines.
+
+---------------------------------------------------------------------------------------
+XD Java and JavaScript are not at all the same.
+The devs of JS used Java as a marketing gimmic to sell JS early on.
+That's all. C:
+
+Babel is a transpiler it turns modern js to old js, that makes it cross compatible
+for old sites and use.

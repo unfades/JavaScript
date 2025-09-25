@@ -1,0 +1,16 @@
+JavaScript Code is handled by the JavaScript Engine.
+
+It Interprets, compiles, and executes our JavaScript code.
+
+EVERY browser has ITS OWN JavaScript Engine.
+
+The most popular one is Chrome browser's V8.
+
+Browser - Engine List
+
+Chrome - V8
+MS Edge - Chakra
+FireFox - SpiderMonkey
+Opera v14+ - V8
+Safari - JavaScriptCore(Nitro)
+
