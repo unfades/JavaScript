@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printing Quotes</title>
+    <script>
+        let name = '"Sachin"';
+        document.write(name + " <br>");
+        name = "'Sachin'";
+        document.write(name + " <br>");
+        // name = ""Sachin""; invalid gotta use escape seq characters
+        name = "\"Sachin\""; //now its valid...
+        document.write(name + " <br>");
+        name = '\'Sachin\''; //now its valid for single quotes...
+        document.write(name + " <br>");
+        //Template strings are pretty superior to avoid the + operator in JS
+        let age = 25;
+        document.write(`My name is ${name} and age is ${age}`);
+
+        var a = 10, b = 20;
+        var c = a + b;
+        //in JS, aint no \n. gotta us <br> from html
+
+        document.write("<br> " + `a is ${a} and b is ${b}, their sum is ${c} <br>`);
+
+        //Math object too in JS, like from Java we had the Math class in java.util
+        let x = 4;
+        document.write(`The square root of ${x} is ${Math.sqrt(x)}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

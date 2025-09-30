@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        num = prompt("Enter a number", "enter here");
+        checknum = num.charAt(num.length-1);
+        if(isNaN(checknum)) document.write("You did not input a number");
+        else if(checknum%2 === 0) document.write("even number");
+        else document.write("odd number");
+
+        //there is no method inbuilt to check, this is fine, but yeah use index of right,
+        //it will give -1 if not found to check and an ndex if found
+        if(num.replaceAll(".","").length < num.length) document.write("You entered a float");
+        else document.write("You entered an int");    
+        
+        //you can also use indexOf() method as stated by paramjeet sir
+        //valid and lit
+        if(num.indexOf(".")==-1) document.write("It is an int");
+        else document.write("It is a float");
+        </script>
+</head>
+<body>
+    <!-- WAP JS code to accept a number from the user and check wheter it is an integer or
+     a float. Also make sure if the input is non numeric your code displays the message
+     YOU DID NOT INPUT A NUMBER -->
+</body>
+</html>

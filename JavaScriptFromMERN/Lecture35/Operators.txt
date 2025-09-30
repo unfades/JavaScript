@@ -1,0 +1,43 @@
+In JS we have -
+
+Arithmetic Operators
+--------------------
+A = 10, B = 20;
++ A+B is 30
+- A-B is -10
+* A*B is 200
+(In JS the / operator is special, in Java it throws error when 10/0,
+but in JS it is infinity like in math)
+Even in Java, 10/0.0 is infinity
+Infinity is a number in JS
+typeof Infinity -> number 
+typeof NaN -> number (NaN means not a number)
+cannot be represented by figures.
+/ 
+% B%A gives 0 
+++ A++ is 11 
+-- A-- is 9
+
+Theres also, Comparison Operators, Logical Operators, Assignment Operators, and
+the typeof Operator to check the type of a variable in JS.
+
+typeof works on variables, expressions, and objects too.
+
+it returns that value in the form of a string, typeof's return type is string
+
+it is important to use parenthesis with typeof or else itll concat the rest of the stuff
+after the first bit ex:
+
+typeof 3 + 4 -> "number4"
+typeof(3+4) -> "number"
+
+console.log(typeof(3.4)); //output is number
+
+var myCar;
+console.log(typeof(typeof myCar)); //output is undefined
+
+var myBike = "";
+console.log(typeof myBike); // string 
+
+var myBicycle = null;
+console.log(typeof myBicycle); // object because of old JS standards

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Coercion in JavaScript</title>
+
+    <script>
+        //as discussed previously, there are some cases in JS, when it auomatically converts
+        //a value of one type to another and this is called type coercion
+        /*
+        The behavior of operator "+":
+
+        If any of the operands is a string, all others are converted to string and concatenation is done,
+        otherwise arithmetic addition is done.
+        left to right 
+        10+20+"Hello" -> "30Hello"
+
+        "Hello"+10+20 -> "Hello1020"
+
+        true + " " + false -> "true false"
+
+        ex:
+
+        "true" + false + 10 -> truefalse10
+        true + false + 10 -> 11
+        true + 10 + "10" -> "1110" in JS strings are in single quotes by default '1110' on the console.
+        if you try it
+        */
+
+        //examples of type coercion
+
+        10+20 //-> 30
+
+        "Good" + "Morning" //-> GoodMorning
+
+        "42"+0 // -> 420
+
+        true+false // 1 + 0 -> 1
+
+        true+true // 1 + 1 -> 2
+
+        true+true+"" //-> "2"
+
+        // Operators in Type Coercion
+
+        //In java, C, C++
+        "10" - "5" // error
+
+        //In JS
+        "10" - "5" // 5
+        //Why?
+        //-,*,/,% soooo to explain
+        //In JS, all other arithmetic operators will try to convert their operands to number
+        //and then apply the operation. If conversion fails, they give NaN as the result
+
+        7*3 // 21
+        7*"3" // 21
+        "7"*"3" // 21
+        "7"*"hiwassup" // NaN cause hiwassup cant convert to a number
+
+        //basic examples
+
+        10*20 //30
+        "Good" * "Morning" // NaN
+        
+        "42" * 7 // 294
+
+        "42" - 7 // 35
+
+        //Special examples
+        true*false //0 as 1*0
+
+        true/false //Infinity as 1/0 anything /0 is Infinity in JS and Math both
+
+        true%true // 0 as 1/1 remainder is 0
+
+        "NYC"/10 // NaN
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

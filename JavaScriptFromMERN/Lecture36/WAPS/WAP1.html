@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //YOU SEE, in JS, NaN is not comparable to anything, even itself...
+        //NaN == 10 false, NaN === 10 false, NaN === NaN false as well.
+        //in JS there is a function isNan() and it returns true if a string 
+        //converts to number, false if it is not converting to number
+        //isNaN() is the method to use to check if it is convertable to NaN
+        //we use it like we use parseInt() Number() etc
+        //pass the val inside, and if it cannot become a number, its true
+
+        //internally isNaN uses Number() function
+        //As Number("") -> 0 the same was isNaN("") is false as Number("") coverts to 0, and thats a number.
+        //if anything doesnt convert to a number isNaN() returns true
+
+        //Theres only 1 way to check NaN, it is the isNaN() method
+        mynum = Number(prompt("Enter a number: ", "enter here"));
+        if(isNaN(mynum)) document.write("You didnt enter a number");
+        else if (mynum%2 === 0) document.write("your number is even");
+        else document.write("Your number is odd");
+    </script>
+</head>
+<body>
+    <!-- WAP a JS code to accept an integer from the user, and check whether its even or odd.
+    Also, make sure that if the user inputs a nonnumeric value your code displays the message
+    "You did not input a number"... 
+    -->
+</body>
+</html>

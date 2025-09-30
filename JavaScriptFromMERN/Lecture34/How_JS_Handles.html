@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let age;
+        age = prompt("what's your age?");
+        //prompt takes input like age as a sring, in its dialog box,
+        // it takes input as a string always.
+        //so age in document.write is always a string, even inside the parenthesis,
+        //(age + 5) age is a string.
+        //therefore it would concat the strings, not add.
+        //how to overcome this?
+        //by using the parseInt() function or by parseFloat()
+        document.write("<b>Your age is </b>" + age + " years and after 5 years you'd be " + (age + 5) + " years old");
+
+        age = parseInt(age);
+        //now its fixed up
+        document.write("<b>Your age is </b>" + age + " years and after 5 years you'd be " + (age + 5) + " years old");
+
+        age = parseFloat(age);
+        //now the float part would not be ignored...
+        //strange that 27NewYork is acceptableand as 27
+        //2NYC4 is accepted as 2
+        //then it becomes 
+        //but if in parseFloat 27 given, it wont give 32.0 just gives 32..
+        document.write("<b>Your age is </b>" + age + " years and after 5 years you'd be " + (age + 5) + " years old");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

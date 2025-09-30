@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converting Values to Boolean</title>
+
+    <script>
+        //JS considers the 5 following things false.
+        /*
+        These are all false values
+        1. ""
+        2. 0
+        3. null
+        4. undefined
+        5. NaN
+
+        always change into false
+
+        and the rest turn into true
+        */
+
+        //To convert a value to a number, JS provides only 1 way:
+        /*
+        1. Using the global function called Boolean()
+        Syntax of Boolean()
+
+        Boolean(value to be converted)
+
+        let a = 10;
+        let b = -1;
+
+        IMPORTANT POINTS:
+        1. Any value can be converted to boolean, passing it to Boolean().
+        2. All values will resolve to true except FALSY VALUES which are 0,"",NaN,null,and undefined.
+        
+        
+        */
+
+        //Basic examples
+        Boolean(10)
+        //true
+        Boolean(0)
+        //false
+        Boolean("bhopal")
+        //true
+        Boolean(false)
+        //false
+
+        //Special Examples
+        Boolean("")
+        //false
+        Boolean(" ")
+        //true as it has a space, that is content inside a character it is non empty
+        Boolean(null)
+        //false
+        Boolean(undefined)
+        //false
+        Boolean(NaN)
+        //false
+        Boolean(Infinity)
+        //true
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+There are 3 kinds of dialog boxes provided by JS.
+
+alert, prompt, and confirm
+
+alert is used mostly for displaying warning messages to users.
+
+The prompt dialog box:
+
+The prompt dialog box is very useful when we want to pop-up a text box to get
+user input. Thus it enables us to interact.
+
+-----------------------------------------------------------
+
+PROMPT dialog box
+
+The prompt dialog box is very useful when we want to pop upo a text box to get user input.
+
+Thi sit enables us to interact with the user. The user needs to fill in the field and then click OK.
+
+Syntax:
+prompt('message','default text');
+
+then the message will be ther as text in front of the user.
+
+one will say ok one will say cancel.
+
+it will be in the form of a string
+
+-------------------------------------------------------------------
+
+COnfirm dialog box
+
+This box appears when you wanna logout of the website.
+Are you sure youw ant to logout?
+
+Syntax: 
+
+confirm('question to ask');
+---------------------------------------------------------------------
+
+alert, prompt, and confirm dialog boxes are all methods of window object.
+
+window.alert()
+window.confirm()
+window.prompt() can also be written.
+
+----------------------------------------------------------------------
+
+Operators in JS
+
+arithmetic, comparison, 
+
+and SPECIAL Operators
+
+===
+
+and !==
+
+Logical Operators
+
+Assignment Operators
+
+-----------------------------------------------------------------------
+

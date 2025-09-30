@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        num = prompt("Enter an integer:", "enter here");
+        num = Number(num);
+        if(isNaN(num)) document.write("You did not input a numeric value");
+        else if(num < 0) document.write("It is a negative number");
+        else if(String(num).length == 1) document.write("Its a single dig pos number");
+        else if(String(num).length == 2) document.write("Its a double dig pos number");
+        else if(String(num).length >= 3) document.write(`Its a ${String(num).length} dig pos number`);
+
+    </script>
+</head>
+<body>
+    <!-- WAP in JS to accept an integer from the user and check whether it is negative or a single
+     digit number or a single digit positive number or a double digit positivenumber or a number
+     with 3 or more digits. Make sure tht if the user inputs a non numeric value, your code displays
+     the message "You did not input a numeric value" -->
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+We discussed earlier the document Object.
+
+The next Object js provides is the console Object.
+
+CONSOLE OBJECT
+-------------------------------------------------------------
+The console object is used by programmers to display messages
+on the browser window for tracing and debugging.
+For the end user it is of no use.
+
+Console Object Uses:
+
+you can write little bits of javascript to test in the console.
+
+It represents the browsers console window and has a method called log()
+
+Syntax:
+
+console.log("THis is a message");
+---------------------------------------------------------------
+
+JavaScript is a dynamically typed programming language.
+
+5+10
+-> 15
+"Hello"+"User"
+-> HelloUser
+
++ checks data type before taking action.
+
+In JS WE SHOULD ALL KNOW THE TYPES AVAILABLE so we knw whats going on.
+----------------------------------------------------------------------
+4 WAYS to declare variables in JS
+
+These are var, let, const, and 4th way is directly assigning the value
+
+In C -> int a = 10;
+contrasting with JS ->
+var a = 10;
+let a = 10;
+const a = 10;
+a = 10;
+
+ES6 introduced let and const. 
+
+a = 10 and var a are old ES versions. ECMASCRIPT.
+4 different ways of assigning data to a variable.
+
+All 4 are valid because JS is a backwards compatible language.
+
+JS written in 2001 will run in 2025.
+
+JS devs do not want sites written decadess ago to fail today.
+This is why.
+
+If you are learning JS rn, its recommended to use the conventions of today.
+
+var and let difference will be explained in the chapter function.
+Usually we will try to write let, but the difference will be explained there.
+
+1 difference is let is modern, var is the old fashioned or legacy way.
+
+we are gonna drop var when we get to functions tho.
+
+Syntax:
+
+var varname;
+or 
+
+var varname = value;
+
+like this 
+var a;
+a = 10;
+var a = 10;
+
+OR
+
+let a;
+a = 10;
+let a = 10;
+
+declaring variables:
+
+var firstName;
+let firstName;
+
+var firstName, lastName;
+let firstName, lastName;
+
+var firstName = 'Sachin';
+let firstName = 'Sachin';
+
+var firstName = 'Sachin',lastName = 'Kapoor';
+let firstName = 'Sachin',lastName = 'Kapoor';
+
+INDUSTRY RECOMMENDED variable NAME CONVENTIONS are:
+camelCaseNotation
+
+for variable names.
+
+---------------------------------------------------------------
+
+Variable declaration rules
+
+Variable names must begin with a letter and can have digits also.
+
+let total$salary; valid
+
+let total_salary; valid <- but do use camelCase for name conventions
+
+let $totalsalary;
+
+let _totalsalary;
+
+normal javaScript is called VANILLA JS. ES6,ES7,.. any ES is vanilla JavaScript.
+normally we do not start variable names with $ because a person
+will be confused if it is normal vanilla JS or jQuery code.
+Because in jQuery, function names start with $.
+and many libraries will get confused because jQuery will mix with js and yup problems arise.
+
+Variab;e names can also begin with $ and _ 
+
+variable names are case sensitive.
+
+IMPORTANT:
+Default value of a variable is "undefined"
+
+it is a special value in JS. it means theres a variable, but with no value.
+--------------------------------------------------------------------------------------
+In JS A lot surprises you, its the worlds most hated and loved language at the same time.
+
+JS DATATYPES are of 2 types:
+
+Primitive datatypes____
+
+predefined types are "value types"
+they're:
+
+Boolean
+Number
+String
+Null
+Undefined
+Symbol (ES6 added this)
+BigInt (ES2020 added this)
+
+Non Primitive datatypes____
+
+user defined types are reference types
+they're:
+
+Object
+Array
+
+Theres another difference in functions and objects btw.
+---------------------------------------------------------------------------------------------------
+
+PRIMITIVE DATA TYPES 
+
+Boolean-> boolean is a logical entity either true or false.
+10+true -> 11 btw.
+takes up 1 byte
+Number: Represents numeric values ex: 100
+takes up 8 bytes
+String Represents the sequence of characters: "hello"
+2 bytes per character...
+So "bhopal" occupies 12bytes.
+
+'' or "" everything is a String in JS, theres no characters.
+Nothing like char in JS.
+
+Null represents null or no value at All
+
+Represents undefined value 
+
+Symbol represents unique keys
+
+BigInt represents very large integer values over 2^53-1 level numbers
+BigInt has lowercase n at the end of the number.
+
+JS Engine is gonna allot these data types for JS.
+
+
+NONPRIMITIVE DATA TYPES 
+
+let name = "Pankaj";
+
+let surName = "Tripathi";
+
+let hit = "Mirzapur";
+
+let year  = 2018;
+they're connected yeah?
+Soooo
+OR ->
+let actor = {name: "Pankaj",surName: "Tripathi", hit: "MirzaPur", year: 2018};
+
+This is like a dictionary in Python.
+
+Array is a group og similar values.
+
+JS crucial topics are APIs, Arrays, DOM, nuances, etc.
+
+-------------------------------------------------------------------------------
+
+Strings in JS :
+
+A string is just a combination of words including numbers.
+
+Any type of character can be stored in a string.
+
+It is enclosed in "" or '' but JS recommends ''.
+
+var myName = 'Sachin';
+var myName = "Sachin";
+both are valid.
+
+undefined and null.
+
+null and undefined are both datatypes in JS.
+
+Understanding the differences between them and when to use what is very important for a beginner
+in JavaScript.
+
+in JS, undefined is when we declare a dataType but we didnt initialize/
+
+var age;
+console.log(age); // shows undefined
+
+It means a variable has been declared but no value has been assigned to it.
+
+In simple words we can say that, JavaScript automatically assigns undefined to any 
+variable whih is declared but not initialized.
+
+const a; //ERROR it is COMPULSORY to define a const variable always.
+
+
+Other places where Undefined is used.
+
+Theres 4 places where Undefined is used.
+
+Accessing an array idex or an object property that does not exist.
+
+let marks  = [100,80,60];
+
+console.log(marks[0]); //100
+console.log(marks[1]); //80
+console.log(marks[3]); //undefined
+
+on the console try it^
+
+similarly try
+
+let actor = {name: 'pankaj', surName: 'Tripathi'};
+
+then type these into the console and see what happens...
+actor.name
+actor.surName
+actor.age
+
+like nothing is void in other languages, nothing is like undefined in JS.
+
+function show(){
+    let a = 10;
+    console.log(a);
+}
+
+let x;
+x = show();
+
+but show isnt returning anything, in other languages there'd be an error but
+not in JS, the value held in x would therefore be undefined since nothing
+was returned by calling the show() method.
+

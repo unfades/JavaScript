@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        /*
+        1. Using the global function called Number()
+        2. Using the function parseInt() or parseFloat()
+        3. Using the method Math.floor()
+
+        JS recommends Number() alone since ES6, the rest convert too but are before ES6, against ES6 then
+
+        Syntax of Number()
+        Number(value_to_be_converted)
+        Syntax of parseInt()
+        parseInt(valtobeconverted)
+        Syntax of parseFloat()
+        parseFloat(valtobeconverted)
+        Syntax of Math.floor()
+        Math.floor(valuetobeconverted)
+        */
+
+        // Number examples
+        Number("1") // -> 1
+        Number("0") // -> 0
+        Number(" 1 ")// -> 1
+        Number("") // -> 0
+        Number("12.2") // -> 12.2
+
+        //Special examples
+
+        Number("1A2") // -> NaN, unlike parseInt() it wont be 1, its against ES6 standards
+
+        Number(true) // -> 1
+
+        Number(false) // -> 0
+
+        Number(null) //-> 0 // because null is converted to 0 when doing primitive conversions is the point
+        //in our notes/slides
+
+        Number(undefined) // -> NaN cause undefined is a datatype not a number
+
+        // parseInt examples
+        parseInt("1") // -> 1
+        parseInt("0") // -> 0
+        parseInt(" 1 ") //-> 1
+        parseInt("") // -> NaN
+        parseInt("12.2") // -> 12
+
+        //Special examples
+
+        parseInt("1A2") // -> 1
+        parseInt("A12") // ->NaN
+        parseInt(true) // -> NaN
+        parseInt(false) // -> NaN
+        parseInt(null) //-> NaN 
+        parseInt(undefined) // -> NaN
+
+        //parseFloat is the exact same as parseInt(), just at floats it'll parse float
+        // but if it is ending with .0 then it'll exclude the decimal point
+
+        parseFloat("12.2") // -> 12.2
+        parseFloat("12.0") // -> 12
+
+        Math.floor(2.1) // -> 2
+        Math.floor(2.9) // -> 2
+        Math.floor(-2.9) // -> -3
+        //Math.floor rounds to the nearest smallest number as integer
+        //Math.ceil rounds to the highest smallest number as integer
+        Math.ceil(-2.9) // -2
+
+        // Math.floor examples just like Number() with 1 difference
+        Math.floor("1") // -> 1
+        Math.floor("0") // -> 0
+        Math.floor(" 1 ") //-> 1
+        Math.floor("") // -> 0
+        Math.floor("12.9") // -> 12 cause it returns nearest smallest int
+
+        //Special examples
+        Math.floor("1A2") // -> NaN
+        Math.floor("A12") // -> 1
+        Math.floor(true) // -> 0
+        Math.floor(false) // -> 0
+        Math.floor(null) //-> 0
+        Math.floor(undefined) // -> NaN
+
+        //Remember just 3 rules instead of memorizing all these:
+
+        //Value                    Becomes
+       /* undefined                NaN
+          null                     0
+          true and false           1 and 0
+          string                   Whitespaces from the start and end are removed.
+                                   If the remaining string is empty, the result is 0.
+                                   Otherwise the number is "read" from the string. An
+                                   error gives NaN.
+        These are JS standard rules for number conversion
+       */
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

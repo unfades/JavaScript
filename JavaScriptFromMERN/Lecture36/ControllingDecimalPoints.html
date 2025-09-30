@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controlling Decimal Points</title>
+    <script>
+        10/4 // 2.5
+        10/5 // 2
+        10/3 // 3.3333..up till 16 places
+
+        /*To control this behavior, JS provides us a method called toFixed(), for
+          number type vales, which can be used to write a number with specified number
+          of decimals
+
+          let a = 10.2
+
+          console.log(a.toFixed(2)) -> will give 10.20
+        */
+
+        let x = 10/3;
+        console.log(x.toFixed(2)); //3.33
+
+        x = 10/4;
+        console.log(x.toFixed(3)); //2.500
+
+        x = 10/3;
+        console.log(x.toFixed(0)); //3
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

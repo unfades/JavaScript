@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //Us changing datatypes as a programmer is type conversion
+        /*
+        In order to convert a value to a string, JS provides 2 ways.
+
+        1. Using the global function called String(), but technically it is also
+        a method of the window just like prompt(), alert(), confirm()
+        2. Using the method toString() on the value to be converted.s
+        */
+
+        //1. ex
+        x = 25;
+        document.write(typeof x + "<br>");
+        x = String(x);
+        document.write(typeof x + "<br>");
+
+        y = 25;
+        document.write(typeof y + "<br>");
+        y = y.toString();
+        document.write(typeof y + "<br>");
+        //The language changing datatypes according to its rules is type coercion
+        document.write(String(10) + "<br>");
+        document.write((10).toString() + "<br>");
+
+        document.write("These are both: " + typeof(String(10)) + " and " + typeof((10).toString()) + "<br>");
+        document.write(typeof(String(true)) + "<br>");
+        document.write("my love is " + (true).toString());
+        thisworks = true.toString();
+        //why does this work?^
+        //because as programmers we define variables, myCar, x, etc
+        //true and false are predefined constants in JS
+
+        /*
+        Just like the above examples,
+        null, undefined, and NaN are all predefined constants in JS
+        so String(null) -> "null"
+        String(undefined) -> "undefined"
+        String(NaN) -> "NaN", NaN.toString() -> "NaN"
+        */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

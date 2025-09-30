@@ -1,0 +1,59 @@
+WHAT IS NULL?
+-------------
+
+It is a value that is assigned by a programmer to indicate that the variable
+currently has no value but will be assigned later.
+
+
+In simple words, null means intentional absence of the value.
+
+Example var age = null;
+
+age = 19;
+
+ex:
+
+let player={
+    name:'Virat',
+    surName:'Kohli',
+    dob:null,
+    firstMatchDate: null
+}
+
+let person={
+    name:'Rajiv',
+    surName:'Mehra',
+    dob: undefined //we should give null, the JS engine gives undefined.
+    //its not an error, its a bad programming practice^^^
+}
+//This is not good its a practice we shouldnt follow
+let softwareDev={
+    name:'Anil',
+    job:'Developer',
+    dob:undefined
+}
+//Yes, the programmer assigns null, cause later we can assign it val.
+let softwareDev={
+    name:'Anil',
+    job:'Developer',
+    dob:null
+}
+
+difference bw null and undefined
+
+null is an assigned val, undefined shouldnt be assigned.
+
+nulls an object, undefined is a type.
+because JS is backwards compatible.
+null indicates the absence of value for a variable.
+undefined indicates the absence of the variable itself.
+
+null is converted to 0 while performing primitve operations.
+undefined is converted to NaN while performing primitive operations.
+
+truthy and falsy values in JS as 10 + true = 11
+
+10 + false = 10
+10 + null = 10
+
+... then in quote_example.html for strings in JS.
