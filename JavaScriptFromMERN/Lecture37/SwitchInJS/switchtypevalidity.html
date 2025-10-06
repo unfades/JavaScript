@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num = prompt('enter a number:','enter here');
+        switch(num){
+            case 10: document.write('you inputted 10'); break;
+            case 20: document.write('you inputted 20'); break;
+            default: document.write('you inputted something else'); break;
+        }
+        //In JavaScript, you inputted something else comes each time because REMEMBER
+        //JavaScript internally in the switch uses === in order to compare and "10" is not 10 buddy.
+        //You can either put (Number(num)) inside switch or do case "10": and case "20":
+        //to make that work
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

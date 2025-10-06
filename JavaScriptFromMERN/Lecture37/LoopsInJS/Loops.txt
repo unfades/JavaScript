@@ -1,0 +1,23 @@
+JS allows you to loop stuff in 6 ways.
+
+for now we will learn 5 ways, and the6th will be learned when
+we are on ES6.
+
+the 5 are:
+
+while -> while a condition is true it loops
+do while -> same thing just runs once regardless of the condition
+for -> loops a block of code a number of times
+for/in -> loops through the values of an array
+for/of -> newly introduced in es6 and loops through the properties of an object.
+
+for each rn is left out, in JS forEach() is a method. It is in advanced features of arrays.
+It is a method which works just like a loop.
+
+While loop ->
+while(cond){
+    ...
+}
+
+
+

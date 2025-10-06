@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num = prompt('enter a number:','enter here');
+        num = Number(num);
+        switch(num%2){
+            case 0: document.write('its even'); break;
+            case 1: document.write('its odd'); break;
+            default: document.write('invalid input'); break;
+        }
+        //WHat if someone entered "Hello" ?
+        //then NaN%2 = NaN and then goes to default
+        //YOU CANNOT ADD CASE NaN btw because NaN === NaN even in JS is false...
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

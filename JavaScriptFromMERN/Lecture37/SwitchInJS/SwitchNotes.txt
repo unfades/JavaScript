@@ -1,0 +1,3 @@
+In python, there's no switch statement.
+
+The JS switch is just like the Java switch.

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //ch is a string whether 1 character or many, its size is calced 2 bytes x amt of characters
+        //internally, js uses === for comparisons got it?
+        let ch = prompt("Enter a character input", "enter here");
+        switch(ch){
+            //no breaks between cases is called fallthrough 
+            case 'a': case 'e': case 'i': case 'o': case 'u':
+                document.write("it is a vowel!");
+                break;
+            default:
+                document.write("it is not a vowel");
+                break;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
