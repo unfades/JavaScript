@@ -1,0 +1,2 @@
+Array, functions, objects, DOM, this is the real JS now.
+Know these topics like the back of your hand.

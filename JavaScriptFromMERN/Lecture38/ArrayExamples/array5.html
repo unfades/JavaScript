@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deleting Array Data</title>
+    <script>
+        let nums = [10,20,30,40,50,60];
+        document.write(`nums: ${nums}<br>`);
+        document.write(`No of elements: ${nums.length}<br>`);
+        //this array length will be the same,
+        //it resets val of num[3] to undefined
+        //you can use better methods to actually remove data like
+        //pop, splice
+        delete nums[3];
+        document.write(`After deleting 40<br>`);
+        document.write(`nums: ${nums}<br>`);
+        document.write(`No of elements: ${nums.length}<br>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

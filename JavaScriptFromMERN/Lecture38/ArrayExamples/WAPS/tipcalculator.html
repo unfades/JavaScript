@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <table border="2">
+        <script>
+            //mine is like this
+            document.write("<h1>Restaurant Tip Calculator</h1>");
+            let n = prompt("How many people are billed?", "enter here");
+            let bills = [];
+            for (let i = 0; i < n; i++) {
+                let tip = 0;
+                bills[i] = Number(prompt("how much was your bill?:", "enter here"));
+                if (bills[i] < 250) tip = bills[i] + bills[i] * 0.20;
+                if (bills[i] >= 250 && bills[i] <= 500) tip = bills[i] + bills[i] * 0.15;
+                if (bills[i] > 500) tip = bills[i] + bills[i] * 0.10;
+                document.write("<tr><td>");
+                document.write(`The original bill${i}: ${bills[i]} and the bill${i} with tip: ${tip}<br>`);
+                document.write("</td><tr>");
+            }
+        </script>
+        </table>
+        <table border  = 2>
+        <script>
+            //make it look like sirs
+            document.write("<h1>Restaurant Tip Calculator</h1>");
+            n = prompt("How many people are billed?", "enter here");
+            bills = [];
+            document.write("<tr><td>Bill Amt</td><td>Final Amt</td></tr>");
+            for (let i = 0; i < n; i++) {
+                let tip = 0;
+                bills[i] = Number(prompt("how much was your bill?:", "enter here"));
+                if (bills[i] < 250) tip = bills[i] + bills[i] * 0.20;
+                if (bills[i] >= 250 && bills[i] <= 500) tip = bills[i] + bills[i] * 0.15;
+                if (bills[i] > 500) tip = bills[i] + bills[i] * 0.10;
+                document.write("<tr>");
+                document.write(`<td>${bills[i]}</td> <td>${tip}</td><br>`);
+                document.write("<tr>");
+            }
+        </script>
+        </table>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let nums = [10,20,30,40,50,60];
+
+        for(let i in nums){
+            document.write(`${i}<br>`);
+        }
+
+        for(let x of nums){
+            document.write(`${x}<br>`);
+        }
+
+        for(let i in nums){
+            document.write(`${nums[i]}<br>`);
+        }
+        nums = [10, ,30,40, ,60];
+        //in for in loops, it excludes undefined values. 
+        //its logic just sees the data that is not undefined.
+        for(let i in nums){
+            document.write(`${nums[i]}<br>`);
+        }
+
+        //difference between for in and for of is that for in goes to indexes 
+        //for of goes to the values instead
+        //for of also considers undefined values also
+        for(let x in nums){
+            document.write(`${x}<br>`);
+        }
+        //for of also works on strings,
+        //like a String "NewYork"
+
+        let city = "Bhopal";
+        for(let x of city){
+            document.write(`${x}<br>`);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

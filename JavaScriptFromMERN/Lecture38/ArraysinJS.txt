@@ -1,0 +1,22 @@
+Array in JS 
+
+Normally an array is a collection of the same type of elements,
+but in JS an array can have different values.
+
+You can have an array with 10,"Sachin", true inside it.
+
+Ways to declare arrays in JS are 2,
+
+1. using array literal
+2. using array constructor
+
+The recommended way is 1. using an array literal
+
+Array literals are written using [] containing array elements separated with commas.
+
+let roll = [1,2,3];
+let roll = [1,"Hi",3];
+are both valid.
+
+Arrays have a mega f ton of properties and methods that come with them automatically
+assigned by JS when declaring arrays.
