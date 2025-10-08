@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Push Method</title>
+    <script>
+        let fruits = ["guava", "apple", "grapes", "banana"];
+        document.write(`Size:${fruits.length}<br>`);
+        document.write(`Values:${fruits}<br>`);
+
+        fruits.splice(1); //remove all elements after the starting index
+        //if you did fruits.splice(0) then all elements would get wiped,
+        //the result is an empty fruits array
+        document.write(`Size:${size}<br>`);
+        document.write(`Values:${fruits}<br>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

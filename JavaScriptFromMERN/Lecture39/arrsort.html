@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let arr = ["football","volleyball","cricket","Soccer"];
+        document.write(`The array is ${arr}<br>`);
+        arr.sort();
+        document.write(`The array is ${arr}<br>`);
+        
+        arr = [2,1,11,4,25,19,8,100,3,0];
+        document.write(`<b>Before sorting:</b>`);
+        for(let x of arr){
+            document.write(`${x}<br>`);
+        }
+        arr.sort();
+        document.write(`<b>After sorting:</b>`);
+        for(let x of arr){
+            document.write(`${x}<br>`);
+        }
+        //the first is 0, the last is 8 because it compares them as strings ascending
+        //ascii 0 is 48, ascii 8 is 56 therefore
+        //the value of ascii 1 is 49
+        //9 is 57 
+        //therefor 11 is 49, 49 for 1, 1 in it. sorts that way.
+        //this  is a problem, what will solve it?
+        //CALLBACKS will solve it because we wanna sort another way.
+
+        //by making a function mysort(a,b){ logic...} returning 1,-1, or 0.
+        //by doing arr.sort(mysort);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        //in JS arrays are always objects, we can use constructors to create an array
-        //there are 3 versions of the constructor
-        //1 Array()
-        //2 Array(size)
-        //3 Array(initializer list)
-        
+        let evens = [2,4,6,8,10];
+        document.write(`${evens.at(2)}<br>`); //6
+        document.write(`${evens.at(-2)}<br>`); //negative indexing allowed so its 8
+        document.write(`${evens.at(7)}<br>`); //undefined
     </script>
 </head>
 <body>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Push Method</title>
+    <script>
+        let arr = [1,2,3,4];
+        document.write(`Size:${arr.length}<br>`);
+        document.write(`Values:${arr}<br>`);
+
+        //arr.splice(0,4,400,400,400,400); instead of this...
+        //this
+        arr.fill(400, 2); //means that start replacing from index 2
+        //1,2,400,400
+        document.write(`Size:${arr.length}<br>`);
+        document.write(`Filled Values:${arr}<br>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

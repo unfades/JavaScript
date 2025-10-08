@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Push Method</title>
+    <script>
+        let fruits = ["guava", "apple", "grapes", "banana"];
+        document.write(`Size:${fruits.length}<br>`);
+        document.write(`Values:${fruits}<br>`);
+
+        let res = fruits.includes("banana");
+        document.write(`Is apple present?: ${res}<br>`);
+        res = fruits.includes("pineapple");
+        document.write(`Is pineapple present?: ${res}<br>`);
+
+        fruits.push("10");
+        res = fruits.includes("10");
+        document.write(`Is 10 present?: ${res}<br>`);
+        fruits.pop("10");
+        fruits.push(10);
+        res = fruits.includes("10");
+        document.write(`Is \"10\" present?: ${res}<br>`);
+        res = fruits.includes(10);
+        document.write(`Is 10(as Number) present?: ${res}<br>`);
+        //JS ALWAYS USES STRICT COMPARISONS WHEN COMPARING ALWAYS
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

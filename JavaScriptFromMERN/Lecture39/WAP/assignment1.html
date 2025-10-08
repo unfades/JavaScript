@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num = 5;
+        let arr = [];
+        let j = 0;
+        while(num>0){
+            let name = prompt("Enter a name: ","enter here");
+            arr[j++] = name;
+            num--;
+        }
+        let find = prompt("Enter a name to find", "enter here");
+        let found = false;
+        j = 0;
+        for(let x of arr){
+            if(x === find){
+                document.write(`<b>${x} found at ${j}</b><br>`);
+                found = true;
+            }
+            if(arr.indexOf(x) === arr.length-1 && !found){
+                document.write(`${find} was not found anywhere...<br>`);
+            }
+            j++;
+        }
+        document.write(`in the array: [${arr}]`);
+    </script>
+</head>
+<body>
+    <p>Write a JavaScript code to accept 5 names from the user
+        and store them in an array. Now ask the user to input 
+        another name and print all the occurrences of this name
+        in the given array method indexOf(). In case the given 
+        name is not found at all, print -> name not found
+    </p>
+</body>
+</html>

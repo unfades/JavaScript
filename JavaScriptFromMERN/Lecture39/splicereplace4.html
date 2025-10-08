@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Push Method</title>
+    <script>
+        let fruits = ["guava", "apple", "grapes", "banana"];
+        document.write(`Size:${fruits.length}<br>`);
+        document.write(`Values:${fruits}<br>`);
+
+        fruits.splice(1,2,"orange"); //now at 1 itll delete 2 and add orange
+        // guava orange banana
+        //if it was fruits.splice(0,4,"orange") then? -> at 0 itll delete all 4, add orange
+        //resulting in just -> orange
+
+        //if it was fruits.splice(0,14,"orange") then? -> its the same behavior, it just deletes
+        //the amount that is left and thats 0-4, then lastly it adds orange.
+        document.write(`Size:${fruits.length}<br>`);
+        document.write(`Values:${fruits}<br>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
