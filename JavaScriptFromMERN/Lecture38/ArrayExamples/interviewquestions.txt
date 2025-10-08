@@ -1,0 +1,7 @@
+making an array. then assigning a .length to the arr is it valid? 
+
+of() vs Array()?
+
+let evens = new Array(2); <- this is the second way with Array() constuctor just size
+let evens = new Array(2,4,5,6,8); <- this is the third way with Array() constuctor with
+initializer elements

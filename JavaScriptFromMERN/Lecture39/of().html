@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>of() constructing Array in JS</title>
+    <script>
+        let arr = Array.of(10,20,30,40);
+        document.write(`Size arr:${arr.length}<br>`);
+        document.write(`Values arr:${arr}<br>`);
+        let brr = Array.of(10);
+        document.write(`Size brr:${arr.length}<br>`);
+        document.write(`Values brr:${arr}<br>`);
+
+        arr = new Array(10,20,30,40);
+        brr = Array.of(10,20,30,40);
+        document.write(`Size arr:${arr.length}<br>`);
+        document.write(`Values arr:${arr}<br>`);
+        document.write(`Size brr:${arr.length}<br>`);
+        document.write(`Values brr:${arr}<br>`);
+
+        arr = new Array(10);
+        brr = Array.of(10); //see the difference now
+        document.write(`Size arr:${arr.length}<br>`);
+        document.write(`Values arr:${arr}<br>`);
+        document.write(`Size brr:${arr.length}<br>`);
+        document.write(`Values brr:${arr}<br>`);
+
+        //for strings, theres the same behavior.
+        //inside the method Array() theres if else or conditions
+        //the same for Array.of()
+        arr = new Array("apple");
+        brr = Array.of("apple"); //see the difference now
+        document.write(`Size arr:${arr.length}<br>`);
+        document.write(`Values arr:${arr}<br>`);
+        document.write(`Size brr:${arr.length}<br>`);
+        document.write(`Values brr:${arr}<br>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

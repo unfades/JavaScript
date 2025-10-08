@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Push Method</title>
+    <script>
+        let fruits = ["guava", "apple", "grapes", "banana"];
+        document.write(`Size:${fruits.length}<br>`);
+        document.write(`Values:${fruits}<br>`);
+
+        //NOTE: JS doesnt allow you to negative index on arrays
+        //JS allows you to negative index on array methods.
+        //you can access -1 in arrays but it'll be undefined right
+        //arrays for array methods have 2 indexes, 0,1,2,3... and -4,-3,-2,-1 as well
+        //index of -1 is therefore banana...
+        fruits.splice(-1);
+        
+        document.write(`Size:${fruits.length}<br>`);
+        document.write(`Values:${fruits}<br>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

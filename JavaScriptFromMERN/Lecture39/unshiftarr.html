@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Push Method</title>
+    <script>
+        let fruits = ["guava", "apple", "grapes", "banana"];
+        document.write(`Size:${fruits.length}<br>`);
+        document.write(`Values:${fruits}<br>`);
+
+        let size = fruits.unshift("orange");
+        document.write(`Size:${size}<br>`);
+        document.write(`Values:${fruits}<br>`);
+        //push adds to the first index of the arr always, you can push multiple items to arr btw
+        size = fruits.unshift("kiwi", "pomegranite", "papaya");
+        document.write(`Size:${size}<br>`);
+        document.write(`Values:${fruits}<br>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

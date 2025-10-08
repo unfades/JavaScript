@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Push Method</title>
+    <script>
+        let fruits = ["guava", "apple", "grapes", "banana"];
+        document.write(`Size:${fruits.length}<br>`);
+        document.write(`Values:${fruits}<br>`);
+
+        fruits.splice(1,0,"orange"); //index 1, after guava remove 0 and add "orange"
+        //result will be guava orange apple grapes banana
+        //if it was fruits.splice(0,0,"orange") then? -> orange guava apple grapes banana thats it
+        document.write(`Size:${fruits.length}<br>`);
+        document.write(`Values:${fruits}<br>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

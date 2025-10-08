@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num = 5;
+        let arr = [];
+        while(num>0){
+            let entry = Number(prompt("Enter a number","enter here"));
+            arr.push(entry);
+            num--;
+        }
+        document.write(arr + "<br>");
+        let numrem = Number(prompt("Enter the number to remove:", "enter here"));
+        //Use classic style loops don't go fancy for of for values when you wanna
+        //minus the array size while you are looking at the values and array
+        //size is changing while you are iterating right
+        for(i = 0; i<arr.length; i++){
+            document.write(arr + "<br>");
+            if(arr[i] === numrem){
+                arr.splice(arr.indexOf(arr[i]),1);
+                i--;
+            }
+        }
+        document.write(arr);
+    </script>
+</head>
+<body>
+    <p>WAP to accept 5 numbers in an array and then ask the user to enter a number and 
+        remove all occurrences of that number the user entered from the array.
+    </p>
+</body>
+</html>

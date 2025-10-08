@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Push Method</title>
+    <script>
+        let fruits = ["guava", "apple", "grapes", "banana"];
+        document.write(`Size:${fruits.length}<br>`);
+        document.write(`Values:${fruits}<br>`);
+
+        fruits2 = fruits.slice(1);
+        //start at 1, copy everything after it into fruits2
+        //if fruits.slice() -> no arguments passed means
+        //that it is gonna copy the whole array
+        document.write(`Original array values: ${fruits}<br>`);
+        document.write(`Size:${fruits2.length}<br>`);
+        document.write(`Sliced Values:${fruits2}<br>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

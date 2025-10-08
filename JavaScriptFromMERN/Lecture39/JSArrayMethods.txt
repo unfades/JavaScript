@@ -1,0 +1,127 @@
+JS treats arrays as objects so it provides us a whole bunch of predefined methods which
+make working with arrays easier.
+
+Based upon their working we can divide these methods into the following:
+
+Methods for ADDING new ELEMENTS in ARR 
+Methods for REMOVING new ELEMENTS in ARR 
+Methods for COPYING array ELEMENTS
+Methods for SEARCHING in ARR
+Methods for TRANSFORMING an ARR
+
+Methods for ADDING new ELEMENTS in ARR:
+push(): adds one or more elements to the end of an ARR, and returns
+the new length of ARR 
+
+unshift(): adds one or more elements to the beginning of an array,
+and returns the new length of the array 
+
+//theres also splice() btw
+
+Methods for REMOVING new ELEMENTS in ARR:
+pop(): Removes the last element from an array and returns that element.
+shift(): Removes the first element from an array and returns that element.
+
+//splice() can do 4 things -> 1 add 2 remove 3 insert 4 replace
+
+splice(): changes the contents of an array by remocing or replacing existing
+elements and/or adding new elements.
+
+splice can have n amount of args as you want
+
+Syntax: 
+arr.splice(start[,deletCount,elem1, ..., elemN]);
+
+slice(): returns a copy of a portion of an array into a new array object selected from
+start to end-1 where start and end represent the index items in that array.
+
+splice() vs slice()
+
+changes     no change
+arr         to arr
+mutable     immutable 
+
+slice() syntax:
+
+arr.slice(start[,end]);
+
+concat(): returns a new array containing items of calling array joined with other array(s)
+and/or value(s).
+
+Syntax:
+arr.slice(arg1,arg2, ...);
+
+of():
+Newly added by ES6, it is a static method, and creates a new Array instance from the given arguments.
+
+of() is a static method, therefore it is used via the Array() type.
+
+Like arr = new Array() is a way to construct an empty array.
+
+Array.of("cherry") is used to construct an array with stuff inside it. stuff being 1 element "cherry"
+
+let arr = new Array.of("cherry");
+
+A method like this exists called from() and it is used in DOM programming.
+Used like Array.from().
+
+fill(): in the array, it fills all the values that are in the array's size and sets them as the 
+argument passed inside.
+let arr = [0,30,589,32];
+ex: arr.fill(400);
+now inside arr is [400,400,400,400];
+
+includes(): added by ES7 this method determines whether an array includes a certain value among
+entries returning true or false as appropriate after searching the array.
+
+indexOf(): returns the first index of the specified item or -1 if element is not found.
+The start value is optional and indicates the 
+starting index of the search. It's default value is 0.
+Syntax:
+indexOf(item, start)
+
+sort(): This method sorts the array after converting the elements into strings and comparing them
+the default is ascending. //its in place,alters arr when called 
+
+reverse(): reverses an array in place and returns the reference to the same array, the first array
+element now becoming the last, and last becoming the first //its in place 
+meaning it alters the arr
+
+join([symbol]):
+
+ex: 
+let fruits = ["apple","fruits","banana"];
+let str = fruits.join(); -> "apple,fruits,banana";
+
+str = fruits.join(-); -> "apple-fruits-banana";
+
+toString(): createsand returns a new string by concatenating all of the
+elements of the array, seperated by commas.
+
+whenever you write anything inside document.write(var);
+
+var.toString() is silently being called.
+
+Just like toString() is called in Java's println(), the same way
+toString() is called in document.write() in JS.
+
+This in JS is called prototype inheritance
+
+ES2022 introduced this->at(index) method
+
+at(index): takes an integer value and returns the item at that index,allowing for positive
+and negative indexing.
+
+ONLY WORKS ES2022 onwards.
+So you can check if your browser supports it by going to caniuse.com 
+and searching the thing u want like search: at()
+
+most IMPORTANT METHODS ARE THESE:
+
+forEach()
+map()
+reduce()
+filter()
+
+but you can only study these after learning callbacks first
+only these are used in REACT

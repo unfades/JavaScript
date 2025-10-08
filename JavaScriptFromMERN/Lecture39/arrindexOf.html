@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Push Method</title>
+    <script>
+        let fruits = ["guava", "apple", "grapes", "banana","apple"];
+        document.write(`Size:${fruits.length}<br>`);
+        document.write(`Values:${fruits}<br>`);
+
+        let res = fruits.indexOf("apple");
+        document.write("The index returned: " + res + "<br>");
+        res = fruits.indexOf("apple", res + 1);
+        document.write("The index returned: " + res + "<br>");
+        res = fruits.indexOf("kiwi");
+        document.write("The index returned: " + res + "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
