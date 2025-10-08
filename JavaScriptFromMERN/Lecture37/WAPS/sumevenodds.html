@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let n = Number(prompt("How many times do you want to sum?: ", "enter here"));
+        let evensum = 0, oddsum = 0;
+        for(let i = 0; i<n; i++){
+            let num = Number(prompt("Enter a number to sum up:"));
+            (num%2==0)? evensum+=num: oddsum+=num;
+        }
+        document.write("evensum: " + evensum + " oddsum: " + oddsum);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

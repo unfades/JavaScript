@@ -20,3 +20,15 @@ are both valid.
 
 Arrays have a mega f ton of properties and methods that come with them automatically
 assigned by JS when declaring arrays.
+
+Array constructors are in 3 ways:
+
+new Array();
+new Array(size);
+and lastly 
+new Array(initializer elements);
+
+ex: let arr = new Array();
+arr = new Array(3);
+arr = new Array(3,4,5,6,100);
+This is the way via constructors.
