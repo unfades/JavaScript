@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //"use strict" //this is for not allowing a = 20;, it must now be either var, let, or const a = 20;
+        function f1(){
+            a = 20; // if a variable declared without var or let
+            //it will still go inside the window.
+            alert(`inside f1 is ${a}`);
+        }
+
+        function f2(){
+            alert(`inside f2 is ${a}`); //if f1 ran first, it'll make window.a global a,
+            //the result here will be 20
+            //if f1 didnt run first output is an error on console "not defined"...
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

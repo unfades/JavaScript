@@ -1,0 +1,3 @@
+Remember, if a variable is declared in the global scope then JS automatically
+makes that a 
+

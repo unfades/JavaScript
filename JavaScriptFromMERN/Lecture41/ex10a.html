@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let id;
+        function showDateTime(){
+            let today = new Date();
+            //document.write(today + "<br>");
+            console.log(today);
+        }
+        function showDateTime2(){
+            let today = new Date();
+            document.write(today);
+        }
+        function startTimer(){
+            id = setInterval(showDateTime, 1000);
+        }
+        function stopTimer(){
+            clearInterval(id);
+            console.log("Clock Stopped!");
+        }
+    </script>
+</head>
+<body>
+    <!-- This is how to stop, using clearInterval() in JS -->
+    <input type="button" onclick = "startTimer();" value = "start">
+    <!-- for stopping -->
+    <input type="button" onclick = "stopTimer()" value = "stop">
+</body>
+</html>

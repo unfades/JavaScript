@@ -1,0 +1,5 @@
+returning values explained in ex7.html
+also Calling functions via Button is the right way to do it.
+These are now just for extra notes and dont type more, just view the slides
+anything of import or for you, type here and the rest.
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showDateTime(){
+            let today = new Date();
+            //document.write(today + "<br>");
+            console.log(today + "<br>");
+        }
+        function showDateTime2(){
+            let today = new Date();
+            document.write(today + "<br>");
+        }
+        function startTimer(){
+            setInterval(showDateTime, 1000);
+        }
+
+    </script>
+</head>
+<body>
+    <!-- <input type="button" onclick = "startTimer()" value = "start"> -->
+    <!-- my lil experiment -->
+     <!-- This also works fine you can have functions passed inside functions, directly call
+      setInterval(funcName, time in ms) -->
+    <input type="button" onclick = "setInterval(showDateTime2,1000)" value = "start">
+</body>
+</html>

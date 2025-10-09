@@ -1,0 +1,4 @@
+You can call funcs directly on a button click
+
+Syntax:
+<input type = "button" value="text you want" onclick = "funcName();">

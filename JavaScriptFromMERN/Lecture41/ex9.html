@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = function (name){
+            let message = "Hello " + name;
+            return message;
+        }; //semicolon cause you need to close that var a = func();
+    </script>
+</head>
+<body>
+    <script>
+        let str = a("NAME");
+        document.write(str);
+        str = a; //all the source code of the function will go into str
+        document.write(a); 
+    </script>
+    
+</body>
+</html>

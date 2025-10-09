@@ -1,0 +1,55 @@
+In JS functions are first class citizens
+
+means we can store them in variables. pass them as argument to other functions.
+return them from other functions.
+
+var a = parseInt(prompt("Enter a no: "));
+OR
+var str = prompt("Enter a no:");
+var a = parseInt(str);
+
+In simple terms we can treat functions like values.
+
+ANONYMOUS FUNCTIONS 
+//this is an Anonymous function 
+function(){
+    ...code
+}
+
+functions without a name are anonymous functions or function expressions.
+
+IMPORTANT BUILT IN FUNCTIONS 
+
+setInterval(function_name, time_period);
+it returns a number representing the ID value
+can be used with clearInterval() to clear the timer
+
+
+ASK THIS ASK THIS ASK THIS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = 1;
+        let id;
+        function oneToTen(){
+            document.write(a + "<br>");
+            //works here? why?
+            if(a === 10){clearInterval(id); document.write("All Done!<br>");}
+            a++;
+        }
+        function startOneToTen(){
+            //if(a === 10){clearInterval(id); document.write("All Done!<br>");} didnt work why thoughh
+            id = setInterval(oneToTen,1000);
+            //if(a === 10){clearInterval(id); document.write("All Done!<br>");} didnt work why
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick = "startOneToTen()" value = "start">
+</body>
+</html>

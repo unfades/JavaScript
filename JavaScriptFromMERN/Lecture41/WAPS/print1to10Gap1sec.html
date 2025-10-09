@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = 1;
+        let id;
+        function oneToTen(){
+            document.write(a + "<br>");
+            //works here? why? Explained below
+            if(a === 10){clearInterval(id); document.write("All Done!<br>");}
+            a++;
+        }
+        function startOneToTen(){
+            //if(a === 10){clearInterval(id); document.write("All Done!<br>");} didnt work why thoughh
+            id = setInterval(oneToTen,1000);
+            //if(a === 10){clearInterval(id); document.write("All Done!<br>");} didnt work why thoughh
+        }
+
+        //ALRIGHT HERES THE REASON WHY, so when startOneToTen()is called, it puts into id setInterval(oneToTen, 1000);
+        /* and setInterval(OneToTEn,1000) is being called over and over, thats why a isnteven known to that in the func
+        because in startOneToTen, it is running on line 18 always, lines 17 and 19 dont even matter since 18 is being
+        repeated forevermore,
+        
+        This is the exact reason why 13 runs cause a is being changed there and is actually in the flow of the code program right, that is why
+        get it?
+        
+        also id is the id of the function call btw
+        */
+    </script>
+</head>
+<body>
+    <input type="button" onclick = "startOneToTen()" value = "start">
+</body>
+</html>

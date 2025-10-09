@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Function Demo</title>
+    <script>
+      function addnos(x, y) {
+        let z = x + y;
+        //return z; //50
+        //return z, x-y; //10 it will return the last statement that was seperated by commas
+        //retrn z,x-y,x*y;// the result will be 600 the last statement is returned
+        //as right now everythings commented, then it will return undefined as the return type
+        //when nothing is returned
+        return z;
+      }
+    </script>
+  </head>
+  <body>
+    <div style = "font-weight: bold; text-align: center;">
+        <a href="JavaScript:alert(`sum is ${addnos(30,20)}`)">Click</a>
+    </div>
+  </body>
+</html>

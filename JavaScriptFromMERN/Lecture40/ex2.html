@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Function Demo</title>
+    <script>
+      function greetings(name) {
+        document.write(`Good Evening ${name}<br>`);
+      }
+      greetings("Sachin");
+      greetings("Afroz");
+      //greetings(); //<- Other langsgiveerror, JS accepts, 
+      // and its undefined automatically
+      //greetings("Amit","Sumit"); <- "Amit" passed, "Sumit" dropped.
+      greetings("Nitin");
+
+      //when you pass nothing, JS automatically puts an array-like thing
+      //called arguments.
+      /*
+      function greetings(){
+
+      }
+      is therefor
+      function greetings(arguments){
+      
+      }
+      its not an array, it acts like a dynamic array...
+      */
+    </script>
+  </head>
+  <body></body>
+</html>
