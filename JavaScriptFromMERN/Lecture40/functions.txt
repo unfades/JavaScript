@@ -1,0 +1,57 @@
+A function is a block of reusable codewrittentoperform a specific task.
+We can think of a function as a sub program within the main program.
+
+A function consists of a set of statements but executes as a single unit.
+
+examples of functions:
+
+parseInt()
+
+parseFloat()
+
+alert()
+
+prompt()
+
+confirm()
+
+these are actually methods but for now we canthink of them as functions.
+
+JavaScript provides many built-in functions such as parseInt(), parseFloat(),
+alert(), prompt(), confirm() etc.\
+
+They all are predefined functions but now we will learn how to develop our own
+functions in JS.
+
+there are a lot of function varieties in JS.
+
+There are 3 most popular types of functions in JS -
+1 Named function
+2 Anonymous function
+3 Arrow function 
+
+parseInt() is a named function cause it has a name.
+
+functions without a name are Anonymous functions
+
+Arrow functions are from ES6 which are like lambda expressions.
+
+Steps For Named Functions:
+
+2steps:
+
+defining/creating the function.1
+calling/using the function.2
+
+Functions can be defined in both <head> and <body> section but
+generally are placed in the head section.
+
+<script>
+    function functionName(arg1, arg2, ...){
+        //..code
+    }
+</script>
+
+functions have parameters or arguments
+its the same thing
+

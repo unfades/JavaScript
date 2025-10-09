@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function average(){
+            let sum = 0;
+            for(let x of arguments){
+                //if strings as numbers passed
+                //use Number(x)
+                sum+=x;
+            }
+            document.write(`sum is: ${sum}, avg is: ${sum/arguments.length}<br>`);
+        }
+
+        average(1,2,4,8,100);
+    </script>
+</head>
+<body>
+    <script>
+        //can also call that function here too
+        average(4,8,100);
+        //if you pass strings, use Number() in the loop logic to mitigate
+        //string concatenation
+    </script>
+    <p>Write a JavaScript function called "average()" which should accept
+        some integers as argument and calculates and displays their sum 
+        and average.
+    </p>
+</body>
+</html>
