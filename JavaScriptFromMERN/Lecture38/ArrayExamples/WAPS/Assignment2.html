@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let num = Number(prompt("Enter a number you want primes up to:", "Enter here.."));
+        let arr = [];
+        for(let i = 2; i<=num; i++){
+            let prime = true;
+            for(let j = 2; j<i; j++){
+                if(i%j === 0){prime = false; break;}
+            }
+            if(prime){ arr.push(i);}
+        }
+        document.write(arr);
+    </script>
+</head>
+<body>
+    WAP in JS to accept an int from the user and store
+    all the prime nos up to that number in an array
+    which should be dynamically sized.
+    finally print the elements of the array.
+</body>
+</html>

@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Declaring and Using Arrays with the Array Constructor</title>
     <script>
-        //in JS arrays are always objects, we can use constructors to create an array
-        //there are 3 versions of the constructor
-        //1 Array()
-        //2 Array(size)
-        //3 Array(initializer list)
-        
+        let arr = [];
+        //is the same as
+        arr = new Array();
+        arr = [];
+        arr.length = 5;
+        //is the same as
+        arr = new Array(5);
+
+        arr = [2, 4, 6, 8];
+        //is the same as
+        arr = new Array(2, 4, 6, 8);
+        /*but remember arr = new Array(2); means the length is being
+            allocated as 2, not as an element is 2 in that arr
+        */
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
