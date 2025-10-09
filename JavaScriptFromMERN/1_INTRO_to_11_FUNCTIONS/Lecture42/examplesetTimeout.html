@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let id;
+        function runner(){
+            document.write("WIPEDEVERYTHINGYUHYUHYUH");
+        }
+        function startIt(){
+            id = setTimeout(runner, 5000);
+        }
+        function stopIt(){
+            clearTimeout(id);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick = "startIt()" value = "click to start!">
+    <input type="button" onclick = "stopIt()" value = "click before its too late!">
+</body>
+</html>
