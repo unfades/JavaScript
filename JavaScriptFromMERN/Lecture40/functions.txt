@@ -55,3 +55,11 @@ generally are placed in the head section.
 functions have parameters or arguments
 its the same thing
 
+Calling functions from link
+
+JavaScript has its own protocol which is a pseudoprotocol
+it can call functions from links
+
+Syntax:
+
+<a href = "JavaScript: functionName();"> some text </a>
