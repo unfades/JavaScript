@@ -3,13 +3,15 @@
   <head>
     <title>Scope Ex</title>
     <script>
-      var a=10;//global
-      function f1(){
-        alert(`Inside f1 a is ${a}`);
-      }
-      function f2(){
-        alert(`Inside f2 a is ${a}`);
-      }
+        var a=10;
+        function f1(){
+            alert(`Inside f1 a is ${a}`);
+            a++;
+        }
+        function f2(){
+            alert(`Inside f2 a is ${a}`);
+            a++;
+        }
       
     </script>
   </head>

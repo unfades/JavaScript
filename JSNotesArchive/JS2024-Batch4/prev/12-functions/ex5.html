@@ -4,7 +4,7 @@
     <title>Function Demo</title>
     <script>
       //design a function called calculate which accepts any number of arguments 
-      //and displays sum and avg
+      /*and displays sum and avg
       function calculate() {
         let sum=0;
         for(let x of arguments){
@@ -16,7 +16,19 @@
       calculate(3, 4, 5);
       calculate(3, 4);
       calculate(3, 4, 5, 6, 7);
+      */
+      function show(){
+        let x = new Date(); //new means an Object is made going into x
+        //x = Date(); valid but this is not an Object, this is just a string, got it?
+        //you cannot do x. for the methods of Date() this way, you can whensaying new Date();
+        document.write(x.toString());
+
+      }
     </script>
   </head>
-  <body></body>
+  <body>
+    <div style = "text-align: center; font-size: 120%;">
+      <a href ="javascript:show()">Show current date time</a>
+    </div>
+  </body>
 </html>

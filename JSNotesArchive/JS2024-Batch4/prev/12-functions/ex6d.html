@@ -3,12 +3,15 @@
   <head>
     <title>Scope Ex</title>
     <script>
-      var a=10;//global
+      var a = 10;
       function f1(){
+        a=20;
         alert(`Inside f1 a is ${a}`);
       }
       function f2(){
+        //a = 30;
         alert(`Inside f2 a is ${a}`);
+        //now it depends which is ran first for val of a
       }
       
     </script>

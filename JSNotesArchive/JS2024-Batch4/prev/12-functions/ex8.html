@@ -8,6 +8,10 @@
       }
       function f2() {
         alert(`Inside f2 a is ${window.a}`);
+        //this gives undefined, why?
+        //because window's an object, and a is not a property of it,
+        //therefore JS says its undefined.
+        //like I was setting in the array variables .tip and that was undefined for that array.
       }
     </script>
   </head>

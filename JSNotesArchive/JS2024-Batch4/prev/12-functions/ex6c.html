@@ -3,12 +3,13 @@
   <head>
     <title>Scope Ex</title>
     <script>
-      var a=10;//global
       function f1(){
+        var a=10;//local
         alert(`Inside f1 a is ${a}`);
       }
       function f2(){
         alert(`Inside f2 a is ${a}`);
+        //error, not defined
       }
       
     </script>

@@ -63,3 +63,6 @@ it can call functions from links
 Syntax:
 
 <a href = "JavaScript: functionName();"> some text </a>
+
+BUT THIS IS NOT RECOMMENDED IT IS RECOMMENDED TO USE Onclick(); in html
+but rn we dont know it so were using this
