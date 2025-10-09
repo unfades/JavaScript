@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        let arr = [1,2,3,4,5,6];
+        let evens =[];
+        let odds = [];
+        let eosums=[];
+        let evensum= 0, oddsum = 0;
+        for(let x of arr){
+            if(x%2==0){
+                evens.push(x); evensum+=x;
+            }else{
+                odds.push(x); oddsum+=x;
+            }
+        }
+        eosums.push(evensum);
+        eosums.push(oddsum);
+        document.write(`arr:${arr},<br>
+        eve:${evens},<br>
+        odd:${odds},<br>
+        eos:${eosums}<br>`);
+    </script>
 </head>
 <body>
-    <p>WAP in JS to divide a given array of positive integers into two parts.
+    <p> WAP in JS to divide a given array of positive integers into two parts.
         First element goes into first part, second element goes to second part,
         third element goes into first part, and so on.
         Now compute the sum of two pats and sore into an array and print it.
     </p>
 </body>
-</html>   
+</html>

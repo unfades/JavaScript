@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        /*
+        let arr = ['0', false, undefined, true, -10, 17, null, NaN, 15, 10, "Bale"];
+        for(let i = 0; i<arr.length; i++){
+            if(arr[i] === '0' || arr[i] === false || arr[i] === undefined || arr[i] === null || Number.isNaN(arr[i])){
+                document.write(arr + "<br>");
+                //arr.splice(arr.indexOf(arr[i]),1);//don't use arr.splice.(arr.indexOf(arr[i]),1)
+                //instead use just i, clean asf
+                //indexOf(NaN) always gives -1, that causes the last element to get deleted
+                arr.splice(i,1);
+                i--;
+            }
+        }
+        */
+        let arr = ['0', false, undefined, true, -10, 17, null, NaN, 15, 10, "Bale"];
+        for(let i = 0; i<arr.length; i++){
+            if(arr[i] === '0' || arr[i] === false || arr[i] === undefined || arr[i] === null || Number.isNaN(arr[i])){
+                document.write(arr + "<br>");
+                //arr.splice(arr.indexOf(arr[i]),1);//don't use arr.splice.(arr.indexOf(arr[i]),1)
+                //instead use just i, clean asf
+                //indexOf(NaN) always gives -1, that causes the last element to get deleted
+                if(isNaN(arr[i])){ 
+                    arr.splice(i,1); //we're avoiding splicing -1,1 this way...
+                }else{
+                arr.splice(arr.indexOf(arr[i]),1);
+                }
+                i--;
+            }
+        }
+        document.write(arr);
+    </script>
 </head>
 <body>
     <p>WAP in JS to remove '0', false, undefined, null, and NaN from given array containing
-        these values/p>
+        these values</p>
 </body>
 </html>
