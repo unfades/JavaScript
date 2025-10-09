@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Loop Demo</title>
+    <script>
+      let n = Number(prompt("Enter a number:"));
+      let sumOfEven, sumOfOdd;
+      sumOfEven = sumOfOdd = 0;
+      for (let i = 1; i <= n; i++)
+        i % 2 === 0 ? (sumOfEven = sumOfEven + i) : (sumOfOdd = sumOfOdd + i);
+
+      document.write(`Summ of even nos from 1 to ${n} is ${sumOfEven}<br>`);
+      document.write(`Summ of odd nos from 1 to ${n} is ${sumOfOdd}<br>`);
+    </script>
+  </head>
+  <body></body>
+</html>

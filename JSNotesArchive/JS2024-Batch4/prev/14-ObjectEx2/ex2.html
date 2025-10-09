@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Comparing Objects</title>
+    <script>
+      let person1 = {
+        name: "amit",
+        age: 22,
+      };
+      let person2 = {
+        name: "amit",
+        age: 22,
+      };
+      document.write("<br>");
+      let str1 = JSON.stringify(person1);
+      let str2 = JSON.stringify(person2);
+      document.write(str1);
+      document.write("<br>");
+      document.write(str2);
+      document.write("<br>");
+      document.write(str1 === str2);
+    </script>
+  </head>
+  <body></body>
+</html>

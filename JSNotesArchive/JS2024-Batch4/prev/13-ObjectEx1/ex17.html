@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Exercise</title>
+    <script>
+      let student = {
+        name: "Ravi",
+        marks: [50, 60, 70],
+        //create a method called calculateGrade() which cal and returns grade
+        calculateGrade: function () {
+          let total = 0;
+          for (let m of student.marks) {
+            total = total + m;
+          }
+          let per = total / 3;
+          if (per >= 75) {
+            return "Distinction";
+          } else if (per >= 60) {
+            return "First Div";
+          } else {
+            return "Fail";
+          }
+        },
+      };
+      console.log(student.calculateGrade());
+      
+    </script>
+  </head>
+  <body></body>
+</html>

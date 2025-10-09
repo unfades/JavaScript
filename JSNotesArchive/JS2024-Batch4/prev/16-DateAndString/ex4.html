@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Extracting Time From Date</title>
+    <script>
+      function showCurrentTime() {
+        let now = new Date();
+        let str =
+          now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+        document.write(`<b>${str}</b>`);
+      }
+    </script>
+  </head>
+  <body>
+    <button type="button" onClick="showCurrentTime()">Show Current Time</button>
+  </body>
+</html>

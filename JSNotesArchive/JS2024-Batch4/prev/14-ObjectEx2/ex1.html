@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Overriding toString</title>
+    <script>
+      let person = {
+        name: "amit",
+        age: 22,
+        toString: function () {
+          return `name:${person.name},age:${person.age}`;
+        },
+      };
+      document.write(person);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise</title>
+    <script>
+      let arr=[];
+      let n;
+      for(let i=0; ;i++){
+        n=Number(prompt("Enter ano , to stop type 0"));
+        if(n==0)
+            break;
+        arr[i]=n;
+      }
+      let sum=0;
+      for(let x of arr){
+        document.write(`<br>${x}`);
+        sum+=x;
+      }
+      document.write(`<br>Sum is ${sum}, Avg is ${sum/arr.length}`);
+    </script>
+  </head>
+  <body></body>
+</html>

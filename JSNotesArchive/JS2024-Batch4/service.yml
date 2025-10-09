@@ -1,0 +1,14 @@
+# mysql-headless-svc.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-headless
+  labels:
+    app: mysql
+spec:
+  clusterIP: None # HEADLESS service
+  selector:
+    app: mysql
+  ports:
+    - port: 3306
+      name: mysql

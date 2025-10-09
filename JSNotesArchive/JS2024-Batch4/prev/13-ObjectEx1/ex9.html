@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Checking existence of a property</title>
+    <script>
+      let myCar = new Object();
+      myCar.name = "Baleno";
+      myCar.year = 2018;
+      myCar.color = "blue";
+      myCar.audioSystem = "Sony";
+      console.log("audioSystem" in myCar);
+      console.log(myCar);
+      delete myCar.audioSystem;
+      console.log("audioSystem" in myCar);
+      console.log(myCar);
+    </script>
+  </head>
+  <body></body>
+</html>

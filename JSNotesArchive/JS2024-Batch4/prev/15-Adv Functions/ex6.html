@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>CallBack Example</title>
+    <script>
+        function multiply(a,b,c){
+            let x=a*b;
+            c(x);
+        }
+        function show(p){
+                console.log(`Product is ${p}`);
+                
+        }
+        multiply(10,2,show);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

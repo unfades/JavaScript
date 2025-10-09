@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Event Demo</title>
+    <script>
+        function question(){
+            let ans=confirm("Are you sure to visit google ?");
+            return ans;
+        }
+    </script>
+  </head>
+
+  <body>
+    <a href="http://www.google.com" onclick="return(question())">Visit Google</a>
+  </body>
+</html>

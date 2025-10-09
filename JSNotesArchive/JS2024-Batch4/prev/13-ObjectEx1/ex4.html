@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Accesing a non existing property</title>
+    <script>
+      let myCar = new Object();
+      myCar.name = "Baleno";
+      myCar.year = 2018;
+      console.log(myCar.name);
+      console.log(myCar.year);
+      console.log(myCar.color);
+      console.log(myCar["color"]);
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Loop Demo</title>
+    <script>
+      let n = Number(prompt("Enter a number:"));
+      document.write(`<h2>Table of ${n}</h2>`);
+      document.write("<table border='2'>");
+      for (let i = 1; ; i++) {
+        if (i == 11) {
+          break;
+        }
+        document.write(`<tr><td>${n} x ${i} = ${n * i}</td></tr>`);
+      }
+      document.write("</table>");
+    </script>
+  </head>
+  <body></body>
+</html>

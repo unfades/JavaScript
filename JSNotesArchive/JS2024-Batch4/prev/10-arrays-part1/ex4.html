@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessing Array Using Index</title>
+    <script>
+      let evens = [];
+      document.write(`Current size of array is ${evens.length}<br>`);
+      evens[0] = 2;
+      evens[1] = 4;
+      evens[5] = 6;
+      evens[10] = 8;
+      document.write(
+        `After adding 4 elements size of array is ${evens.length}<br>`
+      );
+      document.write(`element at 0th position is ${evens[0]}<br>`);
+      document.write(`element at 1 position is ${evens[1]}<br>`);
+      document.write(`element at 2 position is ${evens[2]}<br>`);
+      evens[2] = 12;
+      document.write(`element at 2 position is ${evens[2]}`);
+    </script>
+  </head>
+  <body></body>
+</html>

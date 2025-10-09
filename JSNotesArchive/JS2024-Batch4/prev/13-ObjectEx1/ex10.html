@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Looping over object</title>
+		<script>
+			let myCar = new Object();
+			myCar.name = "Baleno";
+			myCar.year = 2018;
+			myCar.color = "blue";
+			myCar.audioSystem = "Sony";
+			for (let key in myCar) {
+				console.log(key, myCar[key]);
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

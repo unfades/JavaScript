@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Assignment</title>
+    <script>
+      function setTimer() {
+        // Write code to generate digital clock
+        setInterval(() => {
+          let div = document.querySelector("div");
+          let today = new Date();
+          let str =
+            today.getHours() +
+            ":" +
+            today.getMinutes() +
+            ":" +
+            today.getSeconds();
+          div.innerText = str;
+          div.style.color = "crimson";
+          div.style.fontWeight = "bold";
+        }, 1000);
+      }
+    </script>
+  </head>
+
+  <body>
+    <input type="button" value="Show Timer" onclick="setTimer()" />
+    <div id="d1"></div>
+  </body>
+</html>

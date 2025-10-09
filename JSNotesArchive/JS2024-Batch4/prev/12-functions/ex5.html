@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Function Demo</title>
+    <script>
+      //design a function called calculate which accepts any number of arguments 
+      //and displays sum and avg
+      function calculate() {
+        let sum=0;
+        for(let x of arguments){
+            sum=sum+x;
+        }
+        document.write(`Sum is ${sum}<br>`);
+        document.write(`Avg is ${(sum/arguments.length).toFixed(2)}<br>`);
+      }
+      calculate(3, 4, 5);
+      calculate(3, 4);
+      calculate(3, 4, 5, 6, 7);
+    </script>
+  </head>
+  <body></body>
+</html>

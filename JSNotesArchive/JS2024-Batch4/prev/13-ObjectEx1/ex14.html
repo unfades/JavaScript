@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nested Object</title>
+    <script>
+      let person = new Object();
+      person.name = "Vipin";
+      person.gender = "male";
+      person.address = new Object();
+      person.address.city = "Bhopal";
+      person.address.locality = "New Market";
+      person.address.pinCode = 462019;
+      console.log(person.name);
+      console.log(person.address.locality);
+    </script>
+  </head>
+  <body></body>
+</html>

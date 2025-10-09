@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Function Demo</title>
+    <script>
+      let id;
+      let x = function () {
+        let today = new Date();
+        console.log(today);
+      };
+      function startWatch() {
+        id = setInterval(x, 1000);
+      }
+      function stopWatch() {
+        clearInterval(id);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" value="Start Time" onclick="startWatch()" />
+    <input type="button" value="Stop Time" onclick="stopWatch()" />
+  </body>
+</html>

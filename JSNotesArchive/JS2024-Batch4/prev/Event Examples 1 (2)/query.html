@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Event Demo</title>
+		<script>
+			function check(url) {
+				var win = window.open(url, "_blank");
+				setTimeout(() => {
+					console.log(win.document.title);
+					var link = win.document.createElement("link");
+					link.setAttribute("rel", "icon");
+					link.setAttribute("type", "image/gif");
+					link.setAttribute("href", "http://127.0.0.1:5500/images/audio.gif");
+					win.document.head.appendChild(link);
+				}, 1000);
+				return false;
+			}
+		</script>
+	</head>
+
+	<body>
+		<a href="#" onclick="return(check('newev.html'))">Click Me</a>
+	</body>
+</html>

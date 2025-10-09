@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Accessing Properties Inside Method</title>
+    <script>
+      let myCar1 = new Object();
+      myCar1.name = "Baleno";
+      myCar1.year = 2018;
+      myCar1.color = "blue";
+      myCar1.show = function () {
+        console.log(
+          `Color is ${myCar1.color},Name is ${myCar1.name},Year is ${myCar1.year}`
+        );
+      };
+      myCar1.show();
+    </script>
+  </head>
+  <body></body>
+</html>
