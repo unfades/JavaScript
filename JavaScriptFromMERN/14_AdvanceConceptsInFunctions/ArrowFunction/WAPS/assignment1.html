@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var x = 10;
-        document.write(`${x}`);
-        document.write(`${window.x}`);
-        document.write(`${this.x}`); //the same as window.x when declaring global scope of x
-
+        let area = radius => Math.PI*Math.pow(radius,2);
+        document.write(area(3));
     </script>
 </head>
 <body>
-    
+    Write an Arrow Function which accepts the radius of a Circle as argument
+    and returns it's area...
 </body>
 </html>

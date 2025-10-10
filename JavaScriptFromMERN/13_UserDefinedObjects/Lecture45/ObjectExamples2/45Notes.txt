@@ -13,3 +13,7 @@ Suppose theres a database for amazon and it has backend in Java
 and that java needs to convert vals to Javascript,
 that can be done through JSON as the concepts of Java are not understood
 by JS and JS are not understood by Java.
+
+
+We learned to compare objects via manually, JSON.stringify() and also
+the lodash way

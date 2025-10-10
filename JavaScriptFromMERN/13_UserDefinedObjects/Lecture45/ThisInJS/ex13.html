@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var x = 10;
-        document.write(`${x}`);
-        document.write(`${window.x}`);
-        document.write(`${this.x}`); //the same as window.x when declaring global scope of x
 
     </script>
 </head>
 <body>
-    
+    <!-- this is also use here, to the elementthat receieved the event, that's button-->
+    <input  type="button"
+            value = "click to change my color!"
+            onclick = "this.style.backgroundColor='crimson'"/>
 </body>
 </html>

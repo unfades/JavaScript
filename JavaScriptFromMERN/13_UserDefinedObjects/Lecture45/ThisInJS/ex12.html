@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let myCar = {
+            company: "Maruti",
+            model: "Baleno",
+            year: 2014,
+            printAll: function(){
+                console.log(myCar.company + "," + myCar.model + "," + myCar.year);
+            },
+        };
+        /*
+        myCar.showAll = function(){
+            document.write(myCar.model + " " + myCar.year + "<br>");
+        }
+        */
+        myCar.showAll = function(){
+            document.write(this.model + " " + this.year + "<br>"); //here this refers to the owner object
+            //myCar
+        }
+        myCar.showAll();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,7 @@
+One of the most popular ways of creating functions in JS is this,
+
+the arrow function has 
+1 no function keyword
+2 no function name
+3 list of args within parenthesis followed by a fat arrow =>
+followed by { function body }

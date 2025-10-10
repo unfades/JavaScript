@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        var x = 10;
-        document.write(`${x}`);
-        document.write(`${window.x}`);
-        document.write(`${this.x}`); //the same as window.x when declaring global scope of x
-
+        let evenodd = check => check%2==0? "even": "odd";
+        document.write(evenodd(3));
+        document.write(evenodd(4));
     </script>
 </head>
 <body>
-    
+    arrow function check even or odd, one liner go go go
 </body>
 </html>

@@ -1,0 +1,9 @@
+The this keyword isused in multiple places inJS
+
+1 when alone, it is referring to the global object called window.
+
+2 In a function, this refers to the global object called window.
+//1 and 2 its just behaving like window object
+3 In a method, this refers to the owner object. <- myCar = new Object(); here this refers to myCar...
+
+4 In an event, this refers to the element that received the event.

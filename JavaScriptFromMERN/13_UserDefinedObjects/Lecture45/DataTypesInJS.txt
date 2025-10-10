@@ -10,9 +10,6 @@ Primitive or Value Types
 6. Symbol
 7. Big Int
 
-number, boolean, and string are primitive representations of Number, Boolean,
-and String objects.
-
 Non Primitive or Reference Types
 ========================
 All Types of Objects 
@@ -25,7 +22,6 @@ a. Predefined Objects
 5. Date 
 6. Math
 7. Object
-8. JSON 
 
 b. User defined object 
 
@@ -34,3 +30,5 @@ THE MOST IMPORTANT DIFFERENCE BETWEEN value and refrence TYPES
 A. Value types: a. Hold value b. Live in STACK area of RAM
 
    Reference types: a. Hold address b. they live in both the areas: STACK & HEAP
+
+We learned to compare manually, with JSON.stringify(), and with lodash
