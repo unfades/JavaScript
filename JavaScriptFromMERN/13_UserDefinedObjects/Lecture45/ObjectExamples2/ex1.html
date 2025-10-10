@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let myCar = new Object();
+        //it returned object Object meaning
+        //it is an object, of Objectprototype
+        //overriding toString is needed therefore
+
+        myCar.company = "Maruti";
+        myCar.model = "Baleno";
+        myCar.year = 2014;
+        //if it was just function(){ } then it would return undefined btw!
+        myCar.toString = function(){ return `${myCar.company}, ${myCar.model}, ${myCar.year}`;};
+        console.log(myCar);
+        document.write(myCar);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

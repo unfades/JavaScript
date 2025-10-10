@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EASY Way for Object Equality check in JS using JSON</title>
+    <script src = "//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script>
+        let p1 = {
+            name: "harry",
+            gender: "male",
+        };
+        let p2 = {
+            gender: "male",
+            name: "harry",
+        };
+        document.write(JSON.stringify(p1) === JSON.stringify(p2));
+        document.write(_.isEqual(p1,p2) + "<br>");
+    </script>
+</head>
+<body>
+    <p>We have to stringify our objects and then use === to compare them</p>
+
+    <p>This is done with a method called stringify()</p>
+    
+</body>
+</html>

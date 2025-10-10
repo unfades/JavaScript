@@ -1,0 +1,15 @@
+What is JSON? -> JavaScript Object Notation
+=============
+
+1. its a Predefined object in JS
+
+This does - 1 converting server response into JS understandable object
+
+2 This also converts JS object into a string
+
+2. its a super popular data interchange format
+
+Suppose theres a database for amazon and it has backend in Java
+and that java needs to convert vals to Javascript,
+that can be done through JSON as the concepts of Java are not understood
+by JS and JS are not understood by Java.

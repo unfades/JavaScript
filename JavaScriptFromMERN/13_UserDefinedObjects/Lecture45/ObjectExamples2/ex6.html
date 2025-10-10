@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let person1 = {
+            name: "sachin",
+            gender: "male",
+        };
+        let person2 = {
+            name: "sachin",
+            gender: "male",
+        };
+        function compareObj(p1,p2){
+            return p1.name === p2.name && p1.gender === p2.gender;
+        }
+        document.write(`${person1 === person2}`); //true as we made a function tocompare it
+        //kinda like java's comparable
+        //but theres something easier that is possible to do...
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
