@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Deleting property</title>
+    <script>
+      let myCar = new Object();
+      myCar.name = "Baleno";
+      myCar.year = 2018;
+      myCar.color = "blue";
+      myCar.audioSystem = "Sony";
+      console.log(myCar);
+
+      delete myCar.audioSystem;
+      console.log("After removing property");
+      console.log(myCar);
+      console.log(myCar.audioSystem);
+      //it'll be undefined as the property itself will be deleted
+      //since the value when called comes undefined, how to check if deleted or undefined?
+      //the -> in operator is gonna be used for that
+      //if its inside it then returns true if not then false
+
+      //When calling undeclared variables like document.write() or console.log()
+      //the output is not defined
+      //but when accessing a property that doesnt exist it is undefined thats the difference...
+      //console.log(vidhi); -> Uncaught ref error not defined
+      //console.log(window.vidhi); -> undefined
+    </script>
+  </head>
+  <body></body>
+</html>

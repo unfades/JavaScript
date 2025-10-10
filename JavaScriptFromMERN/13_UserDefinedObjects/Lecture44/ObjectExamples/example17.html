@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let student = {name: "Sumit", age: 15, phy:45,chem:50, maths:65};
+        let marks = 0;
+        for(let x in student){
+            if(!isNaN(student[x])) marks+=student[x];
+        }
+        document.write(`total marks that ${student.name} scored: ${marks}WRONGWRONG<br>`);
+        //THIS IS WRONG.
+        //sir's logic is right and u get to learn suth new like this
+        student = {name: "Sumit", age: 15, phy:45,chem:50, maths:65};
+        marks = 0;
+        for(let x in student){ //the x is the key here and it is in the form of a string
+            if(typeof student[x] === "number" && x!="age") marks+=student[x]; //noice and right too
+        }
+        document.write(`total marks that ${student.name} scored: ${marks} RIGHT<br>`);
+    </script>
+</head>
+<body>
+    Given the following object write a for in loop to calculate and print<br> 
+    total marks<br>
+
+    let student = {name: "Sumit", age: 15, phy:45,chem:50, maths:65};
+</body>
+</html>

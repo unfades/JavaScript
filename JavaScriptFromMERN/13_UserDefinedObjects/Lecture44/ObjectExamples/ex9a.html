@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let myCar = new Object();
+        myCar['company'] = "Maruti";
+        myCar["model"] = 'Baleno';
+        myCar["year"] = 2014;
+        myCar["showDetails"] = function(){
+            console.log(myCar.company + "," + myCar.model + "," + myCar.year);
+        }
+        //You must put myCar.company and not company because it is a
+        //property of myCar, and company is treated like a normal variable
+        //so it will give Uncaught reference error not defined
+    </script>
+</head>
+<body>
+    <script>
+        myCar.showDetails();
+    </script>
+</body>
+</html>

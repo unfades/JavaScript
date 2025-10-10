@@ -1,0 +1,40 @@
+THE JS ENgine to run our program works in 2 phases
+
+1 Creation Phase 2 Execution Phase
+
+1. In the creation phase it allocates memory and sets to undefined.
+2. In the execution phase, then it knows we already set undefined to these values.
+
+THE JS engine take variables declared with var to the top
+of the scope of the thing its ran in.
+
+if var was in a block, its taken to the top of the block.
+if var was in a function, its taken to the top of the function.
+
+if var a was written on line 3, it is sent to the top of the scope
+
+**************IMPORTANT:
+ONLY variables with var are hoisted, not let and const.
+ONLY normal functions are hoisted, not anonymous or arrow functions.
+
+EVEN MORE IMPORTANT************:
+let and const variables are also hoisted, the JS engine
+doesn't initialize them to undefined in this case.
+So the error appears Uncaught reference error. cannot be accessed before initialization.
+The answer...
+This is TDZ - TEMPORAL DEAD ZONE
+
+TEMPORAL DEAD ZONE starts when the code execution enters the block which contains the let
+or const declaration and continues till the declaration has executed.
+
+both global and local variables are hoisted, but just global variables become a part of
+window not local.
+
+In Lec 43 its explained
+
+JS team just wanted to do functions hoisting, but they couldn't implement it without
+variable hoisting.
+
+variable hoisting is a byproduct of function hoisting.
+
+this is why modern JS ES6 recommends let or const

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function test(){
+            let str = "sachin";
+            if(str === "sachin"){
+                let a = 10;
+                // var a = 10;
+                document.write(`Inside the if block a = ${a}<br>`);
+            }
+            document.write(`Outside the if block a = ${a}<br>`); //for let its uncaught ref error
+            //not defined
+            //but for var, its no error because its outside the IF BLOCK, got it...
+            //besides functions other stuff are blocks like if, for, while etc...
+        }
+        test();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

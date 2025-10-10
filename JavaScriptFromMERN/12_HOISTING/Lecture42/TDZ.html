@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function show(){
+            //let and const variables are also hoisted up
+            //let game; gets hoisted up here then and since it has no value.. TDZ starts
+            //game's TDZ starts here
+            /*continues here
+            continues here
+            continueshere
+            its TDZ is available but not game
+            */
+           console.log(game); //Uncaught reference error. WHY?
+           /*continues here
+            continues here
+            continueshere
+            */
+           //becomes game = "cricket";
+           let game = "cricket";
+           /*TDZ doesnt exist here
+           TDZ ends here and game is now available with "cricket" inside.
+           doesnt exist here
+           doesnt exist here... look at the notes and remember if you forgot.
+            */
+        }
+        //The error is there because while TDZ continues, let and const variables cannot be accessed
+        //and we are tryna access game before it is declared
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

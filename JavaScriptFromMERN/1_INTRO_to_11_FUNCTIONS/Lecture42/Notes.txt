@@ -1,3 +1,0 @@
-setTimeOut(funcName, timeinms);
-
-clearTimeOut(ID);

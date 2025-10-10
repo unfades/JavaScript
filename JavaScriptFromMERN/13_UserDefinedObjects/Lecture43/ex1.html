@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>object examples</title>
+    <script>
+      let myCar = new Object();
+      myCar.company = "Maruti";
+      //the same thing as above is
+      //myCar["company"] = "Maruti";
+      //myCar['company'] = "Maruti"; is fine too '' or "" both for strings is fine thats why
+      //this is the subscript notation waythrough [] operator called the subscript operator
+      //it is useful for properties with spaces in them as you can't add the dot operator to that
+      //see ex
+      myCar.model = "Baleno";
+      myCar.year = 2014;
+      console.log(myCar);
+
+      let player = new Object();
+      player.name = "Virat";
+      player.surname = "Kohli";
+      player.age = 36;
+      player.birthcity = "delhi";
+      player.runs = 13000;
+      console.log(player);// will show all the properties and values
+      console.log(player.name);//Virat
+      console.log(player.age);//36
+      console.log(player.spouse);//undefined      
+    </script>
+  </head>
+  <body></body>
+</html>

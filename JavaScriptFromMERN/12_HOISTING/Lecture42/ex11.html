@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var a = 10;
+        // let a = 10;
+        //^both act as global when declared out of the function
+        function test(){
+            // var a = 10;
+            // let a = 10;
+            //^Both are local when declared inside the function and inaccessible outside
+            document.write(`Inside the function a = ${a}<br>`);
+        }
+        test();
+        document.write(`Outside the function a = ${a}`);
+        //Before you thought it would run for var, so why not?
+        //BECAUSE functions and blocks are different.
+        //functions are not blocks. see ex11a
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

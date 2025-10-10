@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let myCar = new Object();
+        myCar.model = "Baleno";
+        myCar.year = 2014;
+
+        myCar.stereo = new Object();
+        myCar.stereo.name = "KenWood";
+        myCar.stereo.maxVol = 30;
+        /*
+        console.log(myCar);
+        console.log(myCar.model);
+        console.log(myCar.year);
+        console.log(myCar.stereo.name); //accessible with dots
+        console.log(myCar['stereo']['maxVol']); //also accessible with subscript notation
+        */
+        //now access all the properties of myCar and  its nested object using for in loop
+        //here
+        for(let x in myCar){
+            console.log(myCar[x]);
+        }
+        for(let x in myCar.stereo){
+            console.log(myCar.stereo[x]);
+        }
+    </script>
+</head>
+<body>
+    <p>WAPto access all properties of myCar objects
+        and it's nested object using for in loop
+    </p>
+</body>
+</html>

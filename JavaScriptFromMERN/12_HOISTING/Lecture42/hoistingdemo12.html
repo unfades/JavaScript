@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //output?
+        greet();
+        var greet = function(){
+            console.log("GOod evening!");
+        }
+    </script>
+</head>
+<body>
+    <p>The answer is 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        uncaught typeerror greet is not a function.
+
+        this is what happens:
+
+        var greet = function(){}
+        so JS declares greet as a var and hoists that up 
+        script>
+        var greet;
+        greet(); //-> this is the error, greet is not a function cause above var greet went... 
+        greet is hoisted yes, greet has undefined inside, and greet is not a function...!
+    </p>
+</body>
+</html>

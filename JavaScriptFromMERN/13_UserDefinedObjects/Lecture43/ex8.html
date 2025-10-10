@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let myCar = new Object();
+        myCar['company'] = "Maruti";
+        myCar["model"] = 'Baleno';
+        myCar["year"] = 2014;
+
+        delete myCar.year;
+
+        console.log("company" in myCar);
+        console.log("model" in myCar);
+        console.log("year" in myCar);
+
+        let myCar2 = new Object();
+        myCar2['company'] = "Maruti";
+        myCar2["model"] = 'Baleno';
+        myCar2["year"] = undefined;
+
+        //delete myCar2.year;
+
+        console.log("company" in myCar2);
+        console.log("model" in myCar2);
+        console.log("year" in myCar2);
+
+        for(let key in myCar){
+            console.log(key); //output?
+        }
+
+        for(let key in myCar){
+            console.log(myCar[key]); //output?
+        }
+
+        for(let key in myCar){
+            console.log(myCar.key); //output?
+        }
+
+        for(let key of myCar){
+            console.log(key); //output now?
+        }
+        
+    </script>
+</head>
+<body>
+    
+
+    <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        myCar.key in that loop doesnt work because there is no property
+        .key in ,myCar, so doesn't exist means?
+
+        undefined!
+
+        So thats why undefined comes 4 times
+        You need to use subscript operator instead
+
+        also of myCar is not iterable will come up, you need to study iterable for that
+    </p>
+</body>
+</html>

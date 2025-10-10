@@ -1,0 +1,55 @@
+OBJECTS USED ALREADY IN JS BY US:
+
+1. window 
+2. console
+3. document 
+4. array
+5. Date
+6. Math
+7. functions are also as objects in JS
+
+Today we will learn how to make our own objects in JS.
+
+We have studied OOP before and it says classes are needed
+for objects.
+
+However JS disagrees. Classes are not needed for objects.
+
+Because JavaScript is not a class based language.
+IT IS  A PROTOTYPE based language. languages like lua, self, and logtalk support this.
+
+Just go over these slides in the unit and extra notes are here:
+What is a class base lang?
+
+classes and instances of those classes as objects.
+
+In a prototype based language such as JS, it simply has objects straight up.
+
+In simple words, we can say that creating a class is not required in prototype
+based languages before creating an object.
+
+***********SUPREME KNOWLEDGE****************************
+before ES6 no classes were there
+after ES6 classes being made are optional
+and if you use frameworks or libraries of JS like React, it'll force you 
+to make classes there and its important to do so.
+********************************************************
+
+In JS a prototypicalobject is used as a template
+weget some properties from JS for our new object
+
+this is called Object() in JS which gives us
+toString(), valueOf() etc.
+
+in Java, Object is the Object class's name.
+in JS, Object is just an object.
+
+FROM NOW ON JUST EDIT SIRS POWERPOINTS QUIT writing here
+
+console.log();
+
+console is the object log() is its method
+
+a variable inside an object is called property
+
+SUBSCRIPT Operator

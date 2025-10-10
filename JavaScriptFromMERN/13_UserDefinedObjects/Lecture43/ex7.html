@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let myCar = new Object();
+        myCar['company'] = "Maruti";
+        myCar["model"] = 'Baleno';
+        myCar["year"] = 2014;
+
+        delete myCar.year;
+
+        console.log("company" in myCar);
+        console.log("model" in myCar);
+        console.log("year" in myCar);
+
+        let myCar2 = new Object();
+        myCar2['company'] = "Maruti";
+        myCar2["model"] = 'Baleno';
+        myCar2["year"] = undefined;
+
+        //delete myCar2.year;
+
+        console.log("company" in myCar2);
+        console.log("model" in myCar2);
+        console.log("year" in myCar2);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

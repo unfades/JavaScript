@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let myCar = {
+            company: "Maruti",
+            model: "Baleno",
+            year: 2014,
+            //from JS point of view, printAll is a method now, function(){} is anonymous assigned to printAll
+            //property thats why
+            printAll: function(){
+                console.log(myCar.company + "," + myCar.model + "," + myCar.year);
+            },
+        };
+        myCar.printAll();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

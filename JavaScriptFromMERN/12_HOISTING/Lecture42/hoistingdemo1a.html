@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = 10;
+        function test(){
+            document.write(`Above if msg: ${msg}<br>`);
+            if(a>5){
+                var msg = "Good Morning";
+            }
+            document.write(`After if msg: ${msg}`);
+        }
+        test();
+        //curiosity tht why is it undefined then?
+        //variables and functions are hoisted in JS
+        //functions whole bodies get hoisted up
+        //var variables just get hoisted up
+        //and it is valid for both local and global scopes
+
+        //before running the program, the V8 engine looks for any vars
+        //or functions to hoist, then it runs the program top to bottom line by line
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let myCar = new Object();
+        myCar['company'] = "Maruti";
+        myCar["model"] = 'Baleno';
+        myCar["year"] = 2014;
+        myCar["start"] = function(){
+            console.log('start the car...');
+        }
+        myCar["accelerate"] = function(){
+            console.log('accelerate the car...');
+        }
+        myCar["stop"] = function(){
+            console.log('stop the car...');
+        }
+        myCar.start();
+        myCar.accelerate();
+        myCar.stop();
+    </script>
+</head>
+<body>
+    <script>
+        myCar.start();
+        //this is a property that is referring to an anonymous function, so are the below...
+        //however logically it behaves like a function of that object...
+        myCar.accelerate();
+        myCar.stop();
+    </script>
+</body>
+</html>
