@@ -4,8 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        let company = {
+            name: "Apple",
+            foundationYear:1976,
+            productList : [],
+            foundedBy : ["Steve Jobs","Steve Wozniak"],
+            ceo : "Steve Jobs",
+            createNewProduct : function(product){
+                this.productList.push(product);
+            },
+            resign : function(){
+                str = this.ceo;
+                document.write(`<h3>CEO ${company.ceo} Resigned</h3>`);
+                this.ceo = null;
+                return str;
+            },
+            hireCeo : function(str){
+                this.ceo = str;
+            },
+            toString : function(){
+                return `<b>name:</b> ${company.name}<br>
+                <b>foundationYear:</b>${company.foundationYear}<br>
+                <b>founders:</b>${company.foundedBy}<br>
+                <b>CEO:</b>${company.ceo}<br>
+                <b>products:</b>${company.productList}<br>`;
+            },
+        };
+        let product = new Object();
+        product.name = "iPhone";
+        product.year = 2007;
+        product.toString = function(){
+            return ""+ this.name +"-"+ this.year;
+        };
+        //document.write(product);
+        company.productList.push(product);
+        product2 = new Object();
+        product2.name = "iPad";
+        product2.year = 2010;
+        product2.toString = function(){
+            return ""+ this.name +"-"+ this.year;
+        };
+        company.productList.push(product2);
+        document.write("<h2>Company Details</h2>");
+        document.write(company);
+        company.resign();
+        document.write(company);
+        document.write("<h2>After hiring new Ceo</h2>");
+        company.hireCeo("Tim Cook");
+        document.write(company);
+    </script>
 </head>
 <body>
+
     <p>
         Write a script to create an object called company with these properties and methods:<br>
         
