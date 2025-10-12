@@ -1,0 +1,53 @@
+Another super popular object in JS...
+
+In JS, string is both a reference type and value type
+
+let city = "New York";
+
+let city = new String("New York");
+
+===========================================
+important string methods/properties 
+
+length - returns length of trhe string 
+charAt(index) - returns character of the given index 
+*********************IMPORTANT
+if wrong index is passed, charAt() returns "" empty string
+
+charCodeAt(index) - returns the unicode value(ascii) of tha char
+at that index
+
+"newyork".charCodeAt(1); //101 ascii val/unicode val
+
+indexOf("str")
+
+returns the first occurring index of the first letter of the string passed
+-1 if not present and is casesensitive
+
+lastIndexOf()
+
+returns the last index of a given text in the calling string
+
+var str = "Welcome user"
+alert(str.lastIndexOf("e"));
+output: 10
+and -1 if not present
+
+replace(string, string)
+
+let str = "Black Black";
+str.replace("ack","ue");
+replaces only the first occurrence of given string
+with new string
+output: "Blue Black"
+
+substr(startindex,noofcharswanted);
+var s1 = "Programming";
+var s2 = s1.substr(3,4);
+output: gram //took 3456
+
+substring(startindex, end-1index);
+
+var s1 = "Programming";
+var s2 = s1.substring(3,7);
+output: gram //took 3456
