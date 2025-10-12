@@ -1,0 +1,5 @@
+We know 3 for loops by now, for, for in, for of...
+
+forEach() is a method available to every array in JS.
+
+ONLY USE forEach() for FULL TRAVERSAL, BEGINNING TO END
