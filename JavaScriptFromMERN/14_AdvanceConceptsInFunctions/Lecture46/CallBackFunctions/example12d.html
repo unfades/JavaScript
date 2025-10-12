@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even In Arrays We have discussed Callbacks before</title>
+    <script>
+
+
+        //inside this first 1,2 compared and passed, then 2,9 passed, etc etc
+        //sorts them based on that logic.
+        let arr = [1,2,9,2,1,51,90,-1];
+        document.write(`before sorting:${arr}<br>`);
+        /* you can make it so much shorter than this
+        arr.sort((a,b) => {
+            if(a>b) return 1; //+ve for swapping
+            else if(a<b) return -1; //-ve just like comparable,
+            // doesn't necessarily need be -1 coulda been -2, 
+            // -1000 even still valid for sorting logic
+            else return 0; //means no change needed no sorting occurs
+        });
+        */
+        arr.sort((a,b) => { return a-b;}); //still it works cause it returns +ve, -ve, or 0...
+        document.write(`after sorting:${arr}<br>`);
+    </script>
+    
+
+</head>
+<body>
+    
+</body>
+</html>

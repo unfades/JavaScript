@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function area(radius, show){
+            let ar = Math.PI * radius * radius;
+            show(ar);
+        }
+        function display(ar){
+            document.write(`Area of the circle is: ${ar}`);
+        }
+        area(5,display);
+        //you're just calling display, got it?
+        //the function name passed in there
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
