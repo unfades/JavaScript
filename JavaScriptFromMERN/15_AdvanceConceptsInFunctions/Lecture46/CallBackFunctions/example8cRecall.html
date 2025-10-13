@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showDateTime(){
+            let today = new Date();
+            console.log(today + "<br>");
+        }
+        function startTimer(){
+            setInterval(showDateTime, 1000); //This is already the concept of callbacks, connecting the dots?
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick = "setInterval(showDateTime,1000)" value = "start">
+</body>
+</html>

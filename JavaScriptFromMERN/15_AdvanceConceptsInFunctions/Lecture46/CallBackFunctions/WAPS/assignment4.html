@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("<h1>Sorting Arr of Objects</h1>");
+        let employees = [
+            { name: "Neeraj", salary: 90000, hireDate: "July 1,2010" },
+            { name: "Deepak", salary: 75000, hireDate: "August 15,2009" },
+            { name: "Neeraj", salary: 80000, hireDate: "December 12,2011" },
+        ];
+        employees.toString = function(){
+            let str = "";
+            for(let i = 0; i<employees.length; i++){
+                str += "{ name: "+employees[i].name +","+
+                       " salary: " + employees[i].salary+","+
+                       " hireDate: " + employees[i].hireDate+"}<br>";
+            }
+            return str;
+        };
+        document.write(`<h2>Before sorting:</h2><br> ${employees}<br>`);
+        employees.sort((a,b) => b.salary-a.salary);
+        document.write(`<h2>After sorting:</h2><br> ${employees}<br>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

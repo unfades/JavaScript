@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = 1;
+        let id;
+        function startTimer(){
+           id = setInterval(() => {
+            document.write(a + "<br>");
+            if(a === 10){clearInterval(id); document.write("Done!<br>");}
+            a++;
+        }, 1000);
+        }
+    </script>
+</head>
+<body>
+    <p>Do the setInterval numbers 1-10 printing and Done! using callbacks</p>
+    <input type="button" onclick = "startTimer()" value = "start">
+</body>
+</html>

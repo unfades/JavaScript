@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach Method</title>
+    <script>
+        //this is called imperative programming in JS
+        //to print each element in nums, you are telling JS -
+        //What to do, print arr elements
+        //AND How to do it. Through a for of loop
+        function display(e){
+            console.log(e);
+        }
+        let nums = [10,20,30,40,50];
+        // for(let x of nums){ display(x); };
+        nums.forEach(display); //display is called and each element of nums is passed into it as
+        //an arg, then that is logged onto the console by console.log(e) //10,20,30,40,50
+        //again its callbacks being used.
+        //forEach is used for a FULL TRAVERSAL START TO END, NOT in Reverse, not other stuff...
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

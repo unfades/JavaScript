@@ -1,0 +1,90 @@
+Whenever we pass a function name as an argument to
+another function, then this technique in JS is called
+as CALLBACK...
+
+You can also pass a function body into it, that is also a callback...
+In JS's eyes, the name of a function is equivalent to it's body.
+
+The callback is 
+
+console.log(display);
+//where display is a function.
+console.log(parseInt("25"));
+//this is not a CALLBACK
+//parseInt("25") is being called and then
+//the result is being sent as the parameter
+//into the method console.log()
+//callback is just the name of the function
+//as a parameter
+
+
+when we pass a function as arg to another function,
+then it is called a callback function and the function
+that takes another function as a parameter is called a
+HIGHER ORDER FUNCTION
+
+Remember? functions in JS are first class citizens
+
+They can be stored in a variable - anonymous functions
+
+Like variables, they can be passed as arguments to
+other functions - callbacks
+
+and like variables, they can be returned from a function
+
+=========================================================
+General Syntax:
+
+<function1>(<somearg>,<function2>);
+see explanation in the slides
+
+now
+suppose we got a function
+function multiply(a,b){
+    let x = a*b;
+    console.log(x);
+}
+
+multiply(2,3); //6 is the output
+
+function checkeveodd(n){
+   if (n%2===0) console.log("even");
+   else console.log("odd");
+}
+
+what we want to do is pass checkeveodd as an arg
+into multiply, and be able to call checkeven odd
+from multiply
+
+function multiply(a,b,p){
+    let x = a*b;
+    console.log(x);
+    p(x);
+}
+
+multiply(2,3,checkevenodd);
+meaning checkevenodd is called inside the function
+multiply by p(x)...
+
+just know this is also a way, don't think about
+we could've just directly called checkevenodd inside.
+
+check example7.html
+
+evenOdd is the callback, and then multiply is the Higher
+Order Function...
+
+check 7a you can even put the whole body into it too
+
+check 7b too
+==============================================================
+
+BENEFITS OF CALLBACKS
+
+Now imagine you also have another function like checkeveodd
+instead being factorial, or checkprime, etc 
+callbacks make that code run possible and efficiently too
+and even if a new function is made, just gotta call that too
+makes ur life easier, otherwise you would need to 
+change the code of multiply everytime too...
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let person = {
+            fname: "Amit",
+            age : 21,
+            toString: () => {
+                //here, it is written in the script
+                //tag, then this. refers to the 
+                // window object therefore, it will be
+                //undefined cause window doesn't have
+                //window.fname nor window.age...
+                //IN SIMPLE TERMS, avoid using this keyword
+                //in arrow functions
+                return `${this.fname},${this.age}`;
+            }
+        };
+        document.write(person);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

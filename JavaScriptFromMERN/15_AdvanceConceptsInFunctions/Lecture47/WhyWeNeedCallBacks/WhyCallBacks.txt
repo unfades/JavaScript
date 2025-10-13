@@ -1,0 +1,17 @@
+In JS Programming theres 2 types of programs
+
+1 Synchronous where it runs step by step 
+
+
+example: A ticket for a train is being purchased by a guy, the rest are standing in line
+waiting their turn. That's synchronous mode. 
+
+2 Asynchronous where it does multiple activities at the same time.
+
+In a restaurant, there's multiple people being served at the same time. Multiple actions.
+That's asynchronous mode. If a restaurant was synchronous, people wouldn't go there.
+
+one thing at a time is synchronous, multiple things at once is asynchronous.
+
+AJAX uses callbacks a lot. JS does not have multithreading, it all runs on one thread.
+Callbacks are most helpful in Asynchronous programming. That's where they're used.

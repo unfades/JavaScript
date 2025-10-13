@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function area(radius, callback){
+            let area = Math.PI * Math.pow(radius,2);
+            callback(area);
+        }
+        function display(str){
+            document.write("Area of a circle is "+str);
+        }
+        area(3,display);
+    </script>
+</head>
+<body>
+    <p>WA Higher Order Function called area() which accepts the radius
+       of a Circle as argument and a callback function which displays
+       area. Then from area() calculate the area and call the callback
+       to display area.
+    </p>
+</body>
+</html>

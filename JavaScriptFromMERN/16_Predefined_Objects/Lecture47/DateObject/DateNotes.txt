@@ -1,0 +1,32 @@
+The Date object is used to work with date and time.
+
+It is used for 2 tasks:
+
+1 Retrieve Current Date and Time
+
+2 Storing Dates and Time 
+
+We gotta store Date as Date value, not as string...
+
+WHEREVER JS Runs is called a Host Environment,
+theres 4 of those 
+browser,server,Database,desktop
+
+vscode is made in electron js...
+
+=======================================================
+Date Constructors are -See notes if you forgot -
+
+1 Date()
+2 Date(Mon[th] dd, yyyy)
+3 Date(yyyy,mm,dd)
+4 Date(Month dd, yy hh:mm:ss) 24hr format
+5 Date(yyyy,mm,dd,hh,mm,ss) //this one I like
+6 Date(milliseconds) passed since Jan 1, 1970 midnight
+epoch is something really important, that's an epoch
+date for JS and computer science, this day the unix 
+server got launched.
+
+======================================================
+
+date Methods - see notes, name them. 

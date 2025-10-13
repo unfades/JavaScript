@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach Method</title>
+    <script>
+        function display(e){
+            console.log(e);
+        }
+        let nums = [10,20,30,40,50];
+        //since it's a callback you can directly pass the function body too...
+        nums.forEach(function(e,i){
+            console.log(e,i);
+        });
+        console.log("hi");
+        //(e) can also just be e, prettier likes (e) though, not that I'm using prettier
+        nums.forEach((e,i)=>{
+            console.log(e,i);
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

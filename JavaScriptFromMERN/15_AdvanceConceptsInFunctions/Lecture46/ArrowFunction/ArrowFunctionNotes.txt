@@ -1,0 +1,100 @@
+One of the most popular ways of creating functions in JS is this,
+
+the arrow function has 
+1 no function keyword
+2 no function name
+3 list of args within parenthesis followed by a fat arrow =>
+followed by { function body }
+
+This is an arrow function:
+
+let add = (a,b) => {
+    return a + b;
+};
+document.write(`The sum is: ${add(5,10)}`);
+
+Arrow Functions have variations though...
+
+1. If the arrow function has only one statement
+and the statement returns a value, we can remove
+the function braces and the return keyword.
+
+//removed braces is an error, you gotta remove 
+braces and the return keyword both or neither.
+let add = (a,b) => return a+b; //error
+//removed the return keyword
+let add = (a,b) => a+b;
+//^the fat arrow is still there, that tells us
+//its still a function.
+//it is returning due to the absence of braces.
+//if theres braces and no return statement,
+//then it'll be undefined.
+
+2. If the arrow function takes in only one parameter,
+then we can skip the parenthesis as well.
+
+3. Restrictions on Arrow Functions.
+Restrictions:
+1. Arrow functions do not have their own this value.
+The value of this inside an Arrow function is always
+inherited from the ENCLOSING SCOPE(the block it exists in).
+see example6.html
+
+2. Arrow functions do not have arguments array... like 
+anonymous and named functions have.
+
+3. Just like anonymous functions, arrow functions
+are not hoisted by the JS engine...
+
+recall:
+
+<script>
+        //output?
+        greet();
+        var greet = function(){
+        console.log("GOod evening!");
+        };
+</script>
+
+answer's below...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ans: var greet gets hoisted,
+anonymous function () will not get hoisted
+
+then doing greet();
+is to the var greet, which gives error
+greet() is not a function...
+
+
+just like that arrow functions are not hoisted either so
+
+
+<script>
+        //output?
+        greet();
+        var greet = () => {
+        console.log("GOod evening!");
+        };
+</script>

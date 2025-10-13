@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function area(radius, show){
+            let ar = Math.PI * radius * radius;
+            show(ar);
+        }
+        /*
+        function display(ar){
+            document.write(`Area of the circle is ${ar}`);
+        }
+        area(5, display);
+        */
+        /* shorter
+        area(5, function(display){
+            document.write(`Area of the circle is ${display}`);
+        });
+        */
+        // even shorter through an arrow function
+        area(5, (display) => { //braces are important here because
+            //if we dont use them JS thinks we are returning, which isnt true
+            //document.write() returns nothing, so yeah braces are needed here
+            document.write(`Area of the circle is ${display}`);
+        });
+        //you're just calling display, got it? show is a synonym of ar...
+        //the function name passed in there
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
