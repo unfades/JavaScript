@@ -1,0 +1,26 @@
+The Math object allows us to perform math tasks.
+
+It provides us a collection of math properties and methods which can
+be called by using Math as an object.
+
+1. PI returns the value of PI.
+   Value is 3.14159...
+   Call like this: Math.PI
+
+2.   E returns Euler's number
+   which is 2.71828...
+   Call with: Math.E
+
+3. SQRT2 returns the sq root of 2.
+Val is 1.41421....
+Call with Math.SQRT2 you get the drill
+
+4 max(a,b) -> returns the biggest
+5 min(a,b) -> returns the min
+6 pow(a,b) -> returns a to the power of b
+7 sqrt(a) -> returns the square root of a
+8 random() -> returns a random value between 0 and 1
+very useful for generating random values for games, etc...
+9 floor(a) -> returns the number rounded down Math.floor(2.7) -> 2
+10 ceil(a) -> returns the number rounded up Math.ceil(2.4) -> 3
+You know how to call them now just Math.methodname(params if any);

@@ -1,0 +1,125 @@
+The full for of DOM is Document Object Model...
+
+Before we must understand -
+
+A Web Page 
+
+a developer designs it.
+a browser renders it.
+a user views it's output.
+
+for a developer, a webpage is -
+a collection of tags, text, media
+
+for the user, the webpage is -
+a whole lot of content to view.
+
+for a browser though whenever it renders a webpage...
+It converts that into the form of a tree...
+That tree is called a DOM Tree
+
+The browser converts whatever we wrote in HTML into a Tree,
+that is the DOM Tree.
+
+Example:
+(Human View)
+
+<html>
+	<head>
+		<title>An Example XHTML Document</title>
+		<link rel="stylesheet" href="style.css" type="text/css" />
+	</head>
+	<body>
+		<p>This is an example paragraph.</p>
+		<p>This is an example paragraph with 
+			<a href="stuff.html">a hyperlink</a> inside of it!</p>
+		<p>And here's one with<br />a line break 
+			and an <img src="image.jpg" alt="image">.</p>
+	</body>
+</html>
+
+In the tree, all tags become nodes.
+
+look at the diagram in the slides
+
+then read about DOM thoroughly
+
+Explanation
+In the HTML DOM everything is a node.
+The entire document is a document node.
+Every HTML element is an element node.
+The text inside HTML elements are text nodes.
+Every HTML attribute is an attribute node.
+
+HTML is the child of document, HTML's children are head and body tags
+
+WHAT CAN BE DONE WITH DOM?
+
+With DOM, a programmer gets all the power they need to create dynamic
+HTML:
+
+1Using DOM we can create new HTML elements in the page.
+2We can change all the HTML attributes in the page.
+3We can change all the CSS styles in the page.
+4We can react to all the events in the page.
+
+Meaning we can make elements that weren't even in the page.
+
+Like you click a shopping cart, then theres a table of stuff.
+
+=========================================================================
+WORKING WITH DOM takes just 2 steps
+
+a. Select the desired DOM element.
+b. Access/Change the properties of that element.
+
+When we change the properties of these elements, JS updates DOM and
+so we say that DOM is a Live Data Structure.
+
+Selection of DOM elements can be done in 6 ways:
+1 dot syntax
+2 CSS selectors
+3 using id
+4 uing tag name
+5 using class name
+6 using form
+
+WE know that document is an object thus it gives us properties for accessing
+HTML Elements of the page.
+
+These are: 1. document.body: returns the body object
+2. document.images: returns an array of all the image objects.
+3. document.links: returns an array of all the link objects.
+
+dot syntax...
+document.images[0].src
+document.body.bgColor
+
+querySelectors...
+querySelector();
+querySelectorAll();
+
+//this method is old, querySelector is more powerful
+1 getElementById(idvalue);
+
+let x = documnet.querySelector(".one #two");
+OR 
+let x = document.getElementById("top"); if nothing inside its null returned
+
+2 getElementsByTagName(tagname);
+
+let all = document.querySelectorAll("p");
+OR
+let all = document.getElementsByTagName("p");
+
+This method selects and returns an HTMLCollection of those HTML elements whose
+tag matches with the string passed as argument.
+
+3 getElementsByClassName(classname);
+
+let all = document.querySelector(".highight");
+OR
+let all = document.getElementsByClassName("highight");
+
+querySelectorAll returns NodeList and getElementsBy ones return HTMLCollection
+which is also an array like object, but different.
