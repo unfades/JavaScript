@@ -6,8 +6,11 @@
 				//Access the text of h3
 				let heading=document.querySelector("h3");
 				console.log(heading.innerText);
-				//Change h3 heading to Our Vision
-				heading.innerHTML="<i>Our Vision</i>";
+				//Change h3 heading to Our Visio
+				heading.innerText="<i>Our Vision</i>";
+                //fails cause innerText only replaces it with normal text not html
+                alert(heading.innerText);
+                alert(heading.innerHTML);
 			}
 			</script>
 	</head>

@@ -1,0 +1,28 @@
+Last time we studied 5 methods of DOM...
+
+1 querySelector()
+2 querySelectorAll()
+3 getElementsById()
+4 getElementsByTagName()
+5 getElementsByClassName()
+
+now we will study properties of DOM...
+To get/set an HTML element's textual content we use a property called innerText.
+
+Checkout DOM2 Slides.
+
+if you do this 
+
+let x = document.querySelector("p");
+you do console.log(x); you get 
+<p> "Hello" </p>
+What if you want it without the p tags?
+
+Then you are gonna use innerText.
+for just "Hello" or to replace it too.
+
+This property can write dynamic text in the HTML element, but the text
+will not be interprete as html text but as normal text.
+
+
+

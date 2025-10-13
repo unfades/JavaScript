@@ -4,12 +4,17 @@
 		<script>
 			function show() {
 					// Write code to access all <li> tag of <ul> with id "nav2"
-					let ul=document.getElementById("nav2");
-					let allLi=ul.getElementsByTagName("li");
-					console.log(allLi);
-					for(let li of allLi){
-						console.log(li);
-					}
+					let ul = document.getElementById("nav2");
+					ul = ul.getElementsByTagName("li");
+					//forEach() for this doesn't exist therefore when you try and run it then
+					//it will say .forEach() is not a function... error
+					// for(let li of ul){
+					// 	console.log(li);
+					// }
+					//if you want the forEach() to run, then you have to convert the
+					//HTML collection into an array, this is the first time we are doing that
+					let arr = Array.from(ul);
+					arr.forEach((a) => { console.log(a)});
 			}
 		</script>
 	</head>

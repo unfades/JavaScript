@@ -123,3 +123,8 @@ let all = document.getElementsByClassName("highight");
 
 querySelectorAll returns NodeList and getElementsBy ones return HTMLCollection
 which is also an array like object, but different.
+
+
+===========================================================
+TO CONVERT HTML COLLECTION TO ARRAY use 
+let arr = Array.from(HTMLCollectionObject);

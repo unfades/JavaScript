@@ -1,0 +1,11 @@
+A NodeList is like an array, not an array.
+
+A NodeList is an object like Date, Math and other JS objects.
+
+It is a collection of nodes extracted from document.
+
+It has properties just like an array like length, can iterate it
+with for of, forEach() but theres some differences.
+
+For example: We cannot use the common array methods like push(),
+pop(), slice, join() directly on a NodeList()...
