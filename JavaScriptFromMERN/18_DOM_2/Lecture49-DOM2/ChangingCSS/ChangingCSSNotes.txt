@@ -1,0 +1,22 @@
+EXAMPLE 9 answer
+YES, the problem is that yes style will be changed to
+text-align:center, to the row's center but then...
+the blue attribute will be gone!
+we do not wantt the old properties to be lost.
+we want them still here. How?
+Using the style property available.
+for example
+p.style.fontWeight = "bold";
+the same as what css gives us
+
+The style property itself has child properties which are used to set/get
+specific styles.
+
+Like: 1 backgroundColor,
+2 color,
+3 borderColor,
+4 fontFamily,
+5 fontWeight bold, bolder, lighter, normal, 100 to 900,
+6 fontStyle normal, italic, oblique.
+
+even has .border child propery as well...

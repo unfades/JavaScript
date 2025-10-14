@@ -30,3 +30,16 @@ server got launched.
 ======================================================
 
 date Methods - see notes, name them. 
+ getDate( )         : Returns day portion of date of the month.
+
+ getDay( )          : Returns day of the week from 0 to 6.
+
+ getFullYear( )  : Returns year with 4 digits.
+
+ getMonth( )     : Returns month from 0 to 11.
+
+ getHours( )     : Returns the hour (0 to 23).
+
+ getMinutes( )  : Returns the minute component.
+ 
+ getSeconds( ) : Returns the seconds component.
