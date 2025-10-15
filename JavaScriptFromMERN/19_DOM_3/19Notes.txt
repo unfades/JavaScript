@@ -1,0 +1,2 @@
+In javaScript theres is no contains method for strings,
+you gotta use includes method, works like that

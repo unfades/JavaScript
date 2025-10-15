@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../mystyles.css">
+    <script>
+        function decorate(){
+            let para = document.querySelectorAll("p");
+            /* mine
+            for(let p of para){
+                if(p.innerText.includes("error")) p.classList.add("error");
+                if(p.innerText.includes("success")) p.classList.add("success");
+            }
+            */
+            //sir's
+            para.forEach((p)=>{
+                let str = p.innerText;
+                if(str.indexOf("error")>=0) p.classList.add("error");
+                else if(str.indexOf("success")>=0) p.classList.add("success");
+                //my conditions
+                //if(p.innerText.includes("error")) p.classList.add("error");
+                //if(p.innerText.includes("success")) p.classList.add("success");
+            });
+        }
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor error sit amet.</p>
+    <p>Lorem ipsum dolor successs it amet.</p>
+    <p>Lorem ipsum dolor error sit amet.</p>
+    <p>Lorem ipsum dolor error sit amet.</p>
+    <p>Lorem ipsum dolor error sit amet.</p>
+    <p>Lorem ipsum dolor successs it amet.</p>
+    <p>Lorem ipsum dolor successs it amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <input type="button" value = "add class" onclick="decorate()">
+
+</body>
+</html>

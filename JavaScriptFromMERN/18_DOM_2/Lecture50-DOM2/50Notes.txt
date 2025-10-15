@@ -1,0 +1,22 @@
+Adding and Removing CSS Classes
+
+so suppose you wanted to change 3 things in aparagraph
+You'd have to write .style. etc 3 times over.
+And what if you wanted to change 10, you'd write .style.
+10 times over.
+
+There's a more efficient way of changing the whole CSS,
+its by using CSS Classes.
+
+Even though the classList is read-only, wecan manipulate the
+classes it contains by using it's various methods.
+
+
+add(class1, class2, ...)
+Adds one or more class names to an element.
+remove(class1, class2, ...)
+Removes one or more class names from an element.
+item(index) like in tha classList 0 for class1, 1 for class2
+Returns the class name with a specified index number from an element. Index starts at 0.Returns null if the index is out of range
+toggle(class)
+Returns the class name with a specified index number from an element. Index starts at 0.Returns null if the index is out of range

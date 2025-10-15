@@ -1,0 +1,24 @@
+So in order to add html to a page dynamically, we are gonna use some methods
+
+1. Create a new element with createElement() method passing it in the name of tag as
+a string argument
+
+can be called using document. 
+
+let x = document.createElemenet("p");
+
+in the browsers memory, p tag ismade.
+
+2. createTextNode() method passing it the text to be added as a string argument.
+
+let y = document.createTextNode("Hello");
+
+3. add the text node to the element node by calling the method appendChild() on
+element node object and passing the text node object as argument.
+
+x.appendChild(y);
+
+still not on the page, but in memory of the browser.
+
+4. Add the element node to it's container using appendChild() method.
+
