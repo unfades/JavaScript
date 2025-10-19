@@ -7,12 +7,18 @@
     <script>
         function operate(){
             //when clicking show contact form, a contact form pops up..
-            
+            let contactForm = document.querySelector("div");
+            contactForm.innerHTML = `<h3>Contact Form</h3>
+             Your Name: <input type="text" placeholder="your name"><br>
+             Your Email: <input type="text" placeholder="your email id"><br>
+             Your Phone: <input type="text" placeholder="your phone no"><br>
+             <input type="button" value = "Save"><br>`
         }
     </script>
 </head>
 <body>
     <h2>Get In Touch</h2>
     <input type="button" onclick ="operate()" value="show contact form"/>
+    <div></div>
 </body>
 </html>

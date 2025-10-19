@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>Sharma Computer Academy</title>
+		<script>
+			function operate() {
+				// access the second <li>
+                let ul = document.querySelector("ul");
+                let ch = ul.children;
+                let arr = Array.from(ch);
+                console.log(arr[1]);
+                //sir's after explaining nextElementSibling...
+                let li = document.querySelector("li");
+                console.log(li.nextElementSibling.innerHTML);
+                //access the last <li>
+                ul = document.querySelector("ul");
+                console.log(ul.lastElementChild);
+                //and if you wanted Java to be selected?
+                console.log(ul.lastElemenChild.previousSibling);
+			}
+		</script>
+	</head>
+
+	<body>
+		<div>
+			<h2>Welcome To SCA</h2>
+			<h3>Our Mission</h3>
+			<p>
+				The mission of the SHARMA COMPUTER ACADEMY is to provide its students
+				with the foundation for lifelong learning
+			</p>
+			<h3>Our Courses</h3>
+			<ul>
+				<li>C</li>
+				<li>C++</li>
+				<li>Python</li>
+				<li>Django</li>
+				<li>Java</li>
+				<li>Oracle</li>
+			</ul>
+		</div>
+		<input type="button" value="Click me" onclick="operate()" />
+	</body>
+</html>

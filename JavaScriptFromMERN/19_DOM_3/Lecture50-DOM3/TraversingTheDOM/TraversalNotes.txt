@@ -1,0 +1,156 @@
+suppose theres a div tag,
+you want all the children of that.
+You cannot using the methods you know rn.
+
+We know methods like
+
+1 querySelector()
+2 querySelectorAll()
+3 getElementById()
+4 getElementsByTagName()
+5 getElementsByClassName()
+
+for now we have selected based on type or class or id etc.
+
+But we havent selected the nodes based on their relationship
+with nodes.
+
+none of the above can do this.
+
+So we need to use the DOM Traversal Technique for this.
+
+In this approach we use the DOM TREE by using special
+properties which give us access to things like:
+
+1. parent of a node
+2. all the children of a node
+
+
+imagine the dom tree now, imagine theres 
+
+html with 2 children head and body
+
+head has a child title which has child text.
+
+bdy has children p as paragraphs
+which have their own children as the content like Hello, a tag, input etc...
+
+DOM Properties to traverse that.
+The DOM Tree as an example from the above text
+                            html
+                        /        \
+                       /          \
+                    head          body
+                    /            /  \
+                   /            /    \
+                title           p     p
+                  |             |     |
+                text          "Hello" a
+                                      |
+                                    Click
+
+1 firstChild
+
+document.firstChild -> html is the first child of document
+
+document.firstChild.firstChild -> html's first child is head
+
+2. lastChild
+envison the DOM Tree
+
+document.lastChild -> html is the last child of document
+cause its the only child of document.
+
+document.firstChild.lastChild.firstChild -> p tag 
+
+document.lastChild.lastChild -> body
+
+3. childNodes 
+returns a NodeList object containing a colletion of all the children
+of the specified node.
+
+4. nextSibling
+returns the node immediately following the specified node.
+
+document.firstChild.firstChild.nextSibling -> body
+
+document.firstChild.firstChild.nextSibling.nextSibling -> null
+
+document.firstChild.firstChild.firstChild -> title
+
+5. previousSibling 
+returns teh immediate left node and null if it doesn't exist.
+
+document.firstChild.firstChild.previousSibling -> null
+
+6. parentNode
+
+document.firstChild.lastChild.parentNode -> html
+
+document.firstChild is html,
+html's last child is body,
+body's parentNode is html
+
+7. nodeName
+returns the name of the node, if the node is an element it returns
+the tag name of the node and if the node is a text it
+returns "#text".
+
+8. nodeValue
+returns the value of the node. If it is a text node then the actual
+text is returned and if it is an element then null is returned.
+
+document.firstChild.lastChild.nodeName -> body
+
+document.firstChild.lastChild.firstChild.nodeValue -> null
+because p is an element node... so null
+
+document.firstChild.lastChild.firstChild.firstChild.nodeValue -> "Hello"
+html -> body -> p -> value of "Hello" element
+
+document.firstChild.lastChild.firstChild.nodeSibling.firstChild.firstChild.nodeName -> 
+
+html -> body -> p -> p -> a -> #text
+
+It will say # text if it is a text node
+
+Click is a nodeValue  not nodeName the nodeName of that Click is #text
+
+9. nodeType
+    returns a numeric value representing type of a node. Possible values are 
+    1 element node,
+    2 attribute node,
+    3 text node.
+
+There's an issue with it as doument.firstChild.lastChild.firstChild
+it excluded the div in example1.html, it included the enter we pressed after typing body
+
+These properties were the properties of old DOM,
+some are useful, most are not.
+
+do the challenge to understand them before moving on to the better properties.
+
+So we don't want a mixture of text nodes and element nodes.
+
+DOM Properties have this drawback.
+
+Although we can select HTML elements using DOM properties but these
+properties also conside ENTER and TAB as the child nodes of a node.
+
+So to overcome this problem, modern browsers support their alternative
+properties which only consider HTML elements and ignores text nodes.
+
+======================================================================================
+
+MODERN DOM PROPERTIES
+
+1. firstElementChild -> returns the first child element of the specified node
+2. lastElementChild -> returns thelast child element of the specified node
+3. children -> returns a collection of an element's child elements, as an HTML
+collection object.
+4.nextElementSibling -> returns the next element sibling.
+
+that is the con. NodeList has better properties. So we are gonna use Array.from();
+to convert that into an array to use array properties.
+
+document.firstELementChild.lastElementChild.firstElementChild -> div

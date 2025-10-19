@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../mystyles.css">
+    <script>
+        function decorate(){
+            let para = document.querySelector("p");
+            para.classList.add("error");
+        }
+        function undecorate(){
+            let para = document.querySelector("p");
+            para.classList.remove("error");
+        }
+        function toggleCSS(){
+            let para = document.querySelector("p");
+            para.classList.toggle("error");
+        }
+    </script>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sit velit laborum tempora sint unde doloribus aspernatur! 
+        Cupiditate architecto eum, consequuntur recusandae atque 
+        itaque porro molestias voluptatibus saepe quas labore nobis 
+        praesentium at doloremque!</p>
+
+
+    <input type="button" value = "add class" onclick="decorate()">
+    <input type="button" value = "remove class" onclick="undecorate()">
+    <input type="button" value = "toggle class" onclick="toggleCSS()">
+    
+</body>
+</html>
