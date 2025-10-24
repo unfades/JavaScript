@@ -1,0 +1,8 @@
+The appendChild() method always adds the element at the last of the parent element.
+
+In cas we want to set it in mid or on top, then we need to call the method insertBefore().
+it takes 2 args.
+
+the new element.
+the element before which the new element will be added
+

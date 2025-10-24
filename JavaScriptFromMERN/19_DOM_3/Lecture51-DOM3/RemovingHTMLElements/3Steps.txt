@@ -1,0 +1,9 @@
+To remove HTML elements, we use 3 steps:
+
+1. Obtain a reference to the parent element of the element to remove.
+2. Obtain a reference to the child element to remove.
+3. Call the method removeChild() on parent element passing it the child element to remove.
+
+It doesnt become invisible, it gets straight removed.
+Theres visibility and display,
+the display is gone here.

@@ -1,0 +1,7 @@
+To add a child element we can also use append() and prepend() methods.
+
+STEPS:
+
+1. obtain a reference to the parent element.
+2. call the append() or prepend() methods using the parent element, passing the
+child element to be added as an argument

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addNewColor(){
+            let newColor = prompt("Enter a new element to add");
+            let place = prompt("After which element do you want to add this new Color?");
+
+            let ul = document.querySelector("ul");
+            let colors = ul.children;
+            //HTML collection to array
+            colors = Array.from(colors);
+            for(let i = 0; i<colors.length; i++){
+                if(colors[i].innerText === place){
+                    let li = document.createElement("li");
+                    let newColorNode = document.createTextNode(newColor);
+                    li.appendChild(newColorNode);
+                    /*
+                    the new element.
+                    the element before which the new element will be added,
+                    just like that*/
+                    ul.insertBefore(li, colors[i].nextSibling);
+                    break;
+                }
+                if(i === colors.length-1 && colors[i].innerText!== place){
+                    alert("The color to replace was not found!");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <ul>
+        <li>RED</li>
+        <li>BLUE</li>
+        <input type="button" value="add new color" onclick="addNewColor()">
+    </ul>
+</body>
+</html>

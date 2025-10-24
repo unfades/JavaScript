@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display(){
+            let languages = ["C","C++","Java","Python","JavaScript"];
+            let div = document.querySelector("div");
+            let ul = document.createElement("ul");
+            //the language passed inside you learned today is a literal not object...
+            languages.forEach((language) => {
+                let li = document.createElement("li");
+                let text = document.createTextNode(language);
+                li.appendChild(text);
+                ul.appendChild(li);
+            });
+            if(div.children.length === 0) div.appendChild(ul);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value = "click me" onclick="display()">
+    <div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>Create an HTML page which on loading displays a button. As soon as the button is clicked,<br>
+        there should appear an unordered list containing the names of programming languages.
+    </p>
+</body>
+</html>

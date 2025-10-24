@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        p = document.createElement("h3");
+        function display(){
+            let now = new Date();
+            let div = document.querySelector("div");
+            let text;
+            if(div.children.length === 0){
+                let seconds = now.getSeconds();
+                if(seconds<10) seconds = "0" + seconds;
+                text = document.createTextNode(`${now.getHours()}:${now.getMinutes()}:${seconds}`);
+                p.appendChild(text);
+                div.appendChild(p);
+            }else{
+                let seconds = now.getSeconds();
+                if(seconds<10) seconds = "0" + seconds;
+                p.innerText = `${now.getHours()}:${now.getMinutes()}:${seconds}`;
+            }
+        }
+
+        function startTimer(){
+            setInterval(display, 1000);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value = "click me" onclick="startTimer()">
+    <div></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>Create an HTML page which on loading displays a button. As soon as the button is clicked,<br>
+        there should appear a running digital clock with hour, minutes, and second count updating<br>
+        continuously.
+    </p>
+</body>
+</html>

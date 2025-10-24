@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Using remove()</title>
+		<script>
+			function removePara() {
+				let para = document.getElementById("p1");
+				para.remove();
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="d1">
+			<p id="p1">This is first paragraph.</p>
+			<p id="p2">This is second paragraph.</p>
+		</div>
+		<!-- exception if pressed again because para was gotten by its element Id which was
+		 p1, then its gone removed, so p1 doesnt have an id its not there then calling remove
+		 generates an exception -->
+		<input type="button" value="remove para" onclick="removePara();" />
+	</body>
+</html>

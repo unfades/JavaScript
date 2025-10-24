@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function removePara(){
+            let div = document.querySelector("div");
+            let para = div.firstElementChild;
+            console.log(para);
+            div.removeChild(para);
+        }
+    </script>
+</head>
+<body>
+    <div id="d1">
+			<p id="p1">I am para 1</p>
+			<p id="p2">I am para 2.</p>
+		</div>
+        <!-- keep clicking eventually you will get an exception, because when no children
+         are left eventually it will be null passed in the end and that will give a runtime
+         exception-->
+		<input type="button" value="remove para" onclick="removePara();" />
+    </div>
+</body>
+</html>
