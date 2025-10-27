@@ -2,14 +2,15 @@
 	<head>
 		<title>Event Demo</title>
 		<script>
-			function changecolor1() {
-				let div = document.querySelector("#div1");
-				div.style.backgroundColor = "red";
-			}
-
-			function changecolor2() {
-				let div = document.querySelector("#div2");
-				div.style.backgroundColor = "yellow";
+			function changeColor(color) {
+				if(color === 'red'){
+					let div = document.querySelector("#div1");
+					div.style.backgroundColor = "red";
+				}
+				if(color === 'yellow'){
+					let div = document.querySelector("#div2");
+					div.style.backgroundColor = "yellow";
+				}
 			}
 		</script>
 		<style type="text/css">
@@ -28,10 +29,10 @@
 	</head>
 
 	<body>
-		<div id="div1" onclick="changecolor1()">
+		<div id="div1" onclick="changeColor('red')">
 			Click to change color to RED
 		</div>
-		<div id="div2" onclick="changecolor2()">
+		<div id="div2" onclick="changeColor('yellow')">
 			Click to change color to YELLOW
 		</div>
 	</body>
