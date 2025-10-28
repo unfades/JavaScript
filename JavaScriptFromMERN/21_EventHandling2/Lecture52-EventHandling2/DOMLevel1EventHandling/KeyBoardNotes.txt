@@ -1,0 +1,13 @@
+onkeydown() onkeypress()
+
+whenever a key is pressed on your keyboard,
+onkeydown() is gonna run
+
+onkeypress() works only on when you press
+a key with an ascii, not for function keys, shift etc
+
+onkeypress() is DEPRECATED do not use it anymore.
+
+it may be dropped at any time by modern browsers.
+technically it is irrelevant, onkeydown() can handle everything onkeypress() can.
+

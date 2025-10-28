@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>Event Demo</title>
+    <script>
+        function check(ref){
+            let ans = prompt("Enter google or facebook");
+            ans = ans.toLowerCase().trim();
+            if(ans === "google" || ans === "facebook")
+              ref.href = "https://www."+ans+".com/";
+            return ans;
+        }
+    </script>
+  </head>
+
+  <body>
+    <a href="" onclick = "return check(this)">Click Me</a>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+DOM LEVEL 0 is highly discouraged.
+The event handling approach we've used is the simplet way of
+defining an event but it is highly discouraged because it is very inflexible
+and it mixes the structure of the page with its functionality.
+That is it mixes HTML with JavaScript.
+
+The rules are that you should never mix html css with JavaScript.
+
+Keep the HTML and CSS part seperate and the JS part seperate.
+
+because we were writing onclick = "jsfunctionName()";
+we were mixing HTML and JS till now, so lets NOT do that even.
+
+Syntax for DOM Event:
+its got 2 steps:
+1. get the element
+2. assign a handler to the property onevent
+
+returning FALSE in functions cancels their default behavior...

@@ -1,0 +1,6 @@
+1. addEventListener() - register an event handler
+2. removeEventListener() - remove an event handler
+
+The addEventListener() Method
+takes 1 an event name
+2 an event handler function

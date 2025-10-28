@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Using DOM Level 1 Event Handling</title>
+		<script>
+			function changeColor() {
+				this.style.color = "red";
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="mydiv">Hello User</div>
+		<script>
+            //This is level 1 event handling
+            //cannot move the script tag up above because
+            //the JS engine will wonder what is "mydiv"?
+            //you can however place it at the bottom of the body
+            //because that will make sure JS knows what everything is.
+			let x = document.getElementById("mydiv");
+			x.onclick = changeColor;
+		</script>
+	</body>
+</html>
