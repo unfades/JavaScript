@@ -1,0 +1,29 @@
+Using String.fromCharCode
+
+Benefits of addEventListener()
+
+it allows for adding more than one handler for an event
+This is useful for libraries, js modeuls, or any
+code that needs to work with other libraries or extensions.
+
+2. rather than using onXYZproperty, it gives you finer control
+of the phase when the listener is activated(capturing vs bubbling)
+
+look at the notes n describe event bubbling and event delegation
+
+In order to stop eventbubbling we use stopPropagation()...
+
+preventDefault() is the modern return false in a statement for
+functions to stop default behavior.
+
+How to stop bubbling?
+
+pass e into the method, and just apply e.stopPropagation();
+it is a method of e like e.key is a member.
+
+how to stop delegation?
+
+we just check if(e.target === "c2")
+or whatever element we want to stop
+and then simply type return;
+for the ones we dont want the behavior to show

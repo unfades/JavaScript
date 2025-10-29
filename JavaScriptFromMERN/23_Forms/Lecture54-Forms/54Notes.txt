@@ -1,0 +1,7 @@
+To work with Form we need to access it in our
+JS code
+
+Apart from using getElementById(). JS allows
+us to access a Form object in 2 more ways:
+1. Using the querySelector() method
+2. Using the name property
