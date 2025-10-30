@@ -5,3 +5,45 @@ Apart from using getElementById(). JS allows
 us to access a Form object in 2 more ways:
 1. Using the querySelector() method
 2. Using the name property
+
+
+important in FORMS in HTML
+We cannot access its elements directly,
+we have to 
+1 using its name attribute
+or 
+2 using its particular elements property
+or else it'll move on to the next element in DOM,
+also -
+difference between 
+
+<p> Hello </p>
+
+and a text box that has Hello inside is that
+let p = document.querySelector("p");
+p.innerText refers to the inner text of p
+
+let x = document.querySelector("input");
+x.value refers to the text being inputted
+inside the textbox.
+
+
+also Forms property "elements" means input controls.
+meaning the textboxes, input buttons, etc.
+got it...
+
+when you click a normal button the "click" event fires
+and button is registered.
+
+when you click a submit button, the "submit" event fires,
+and that button is a form button,
+
+you gotta do e.preventDefault if validation fails...
+
+and if everything goes well then it goes to the server.
+
+You can submit via a submit button...
+
+important note: the form has a submit button too and you can
+submit the form through JavaScript code by calling the submit()
+metho on the form object as myForm.submit(); 

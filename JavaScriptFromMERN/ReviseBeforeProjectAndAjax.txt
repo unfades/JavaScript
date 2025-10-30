@@ -1,0 +1,5 @@
+1 DOM revise that reall well
+2 Arrays
+3 Strings
+
+All of these are gonna come handy for the project and AJAX...
