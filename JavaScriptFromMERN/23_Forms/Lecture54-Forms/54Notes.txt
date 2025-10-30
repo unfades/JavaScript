@@ -46,4 +46,4 @@ You can submit via a submit button...
 
 important note: the form has a submit button too and you can
 submit the form through JavaScript code by calling the submit()
-metho on the form object as myForm.submit(); 
+metho on the form object as myForm.submit()

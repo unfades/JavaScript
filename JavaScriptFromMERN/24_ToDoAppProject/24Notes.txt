@@ -6,3 +6,53 @@ In the project for the UI we used:
 
 Thats about it...
 And the Logic for the Todo List is in the JS part.
+
+theres 3 ways to get bootstrap into your code...
+
+1 download as a .css file.
+2 cdn (link professional way).
+3 npm -> used in react a lot.
+
+CDNs we used are bootstrap and fontawesome.
+
+cdns are content delivery networks, which is like servers near us
+which provide us content they have.
+kinda like netflix has servers near us to serve us videos.
+these cdns are for styling and prettyness.
+
+CDN is the better way rather than downloading the css file,
+because we can change it up by changing the class,
+dont have to host the css on our own servers...
+
+also bootstrap makes our page responsive based on the device
+
+container-fluid class is there, it stretches like the parent
+text-center, text-light, all are bootstrap classes
+
+my-4 means margin from the y axis, is 4 pixels.
+removing that attaches our todo list text to the top of the page
+
+bootstrap docs have each class's definitions, bootstraps all about
+remembering classes, then applying your own logic on top...
+
+mb-4 is the gap between the Text Todo List and the search box...
+
+input is deorated with the class form-control...
+
+list-group is the class we applied on li on the ul
+
+list-group-items are the elements within the ul
+
+todosis our class, mx-auto means center on x axis
+text-light is for text color inside
+
+flexbox is being used too...
+d-flex enables flexbox in bootstrap, display flex is the default css,
+justify-content-between makes the contents go in the far sides,
+and space in the middle
+
+justify-content-middle does this -> it smushes the content in the middle and
+spaces out on the far sides.
+
+!important in css means that in the heirarchy of css, do not replace stuff
+that had !important before in the new replacement css logic.
