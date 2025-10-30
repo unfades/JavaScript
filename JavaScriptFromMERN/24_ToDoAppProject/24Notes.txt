@@ -1,0 +1,8 @@
+In the project for the UI we used:
+
+1 Font Awesome library.
+2 Bootstrap which is a CSS Framework.
+3 gradient which we were to explore in CSS.
+
+Thats about it...
+And the Logic for the Todo List is in the JS part.
